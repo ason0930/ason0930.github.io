@@ -164,14 +164,21 @@ h1,h2,h3,h4,h5,h6,p,span,ul,li{
     cursor: pointer;
     width: 60px;
     height: 40px;
+    background: $pirmary;
     border: none;
-    color: #000;
+    color: #fff;
     z-index: 0;
     overflow: hidden;
     transition: .2s;
+      @media only screen and (max-width: 768px){
+        width: 80px;
+        height: 44px;
+        // color: #fff;
+        // background: $pirmary;
+      }
     &:hover{
-      color: #fff;
-      background: $pirmary;
+      // color: #000;
+      background: $secondary;
       &:before{
         left: 0;
       }

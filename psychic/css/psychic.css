@@ -1,0 +1,57 @@
+/* 20200424 Ason */
+/* common */
+body {
+    font-family: 微軟正黑體;
+    font-size: 1.1rem;
+}
+h3, h4 {
+    border: 1px #000 solid;
+    padding: 10px;
+    margin-bottom: 30px !important;
+}
+h3 {
+    margin-top: 40px;
+}
+h3.first-title {
+    margin-top: 0;
+}
+.copyright {
+    background-color: #222;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 50px;
+    padding: 12px 0;
+}
+.copyright i {
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+/* qrcode */
+.qrcode-line {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+}
+
+/* note */
+.note {
+    font-size: 1rem;
+    list-style: none;
+}
+.note li {
+    margin-bottom: 15px;
+}
+.note li::before {
+    content: "\2219";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    font-size: 12px;
+    color: ##6c757d; /* Change the color */
+    /* font-weight: bold;  */
+    /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; 
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em; 
+    /* Also needed for space (tweak if needed) */
+}

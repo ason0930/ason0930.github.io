@@ -1,4 +1,4 @@
-/* 20200424 Ason */
+/* 20200425 Ason */
 /* common */
 body {
     font-family: 微軟正黑體;
@@ -14,6 +14,15 @@ h3 {
 }
 h3.first-title {
     margin-top: 0;
+}
+header {
+    /* background-image: url(../image/header.svg);
+    background-size: cover;
+    background-position: center; */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.jumbotron {
 }
 .copyright {
     background-color: #222;

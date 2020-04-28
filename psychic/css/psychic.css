@@ -5,15 +5,22 @@ body {
     font-size: 1.1rem;
 }
 h3, h4 {
-    border: 1px #000 solid;
     padding: 10px;
     margin-bottom: 30px !important;
 }
 h3 {
+    width: 20%;
+    border: 1px #adb5bd solid;
     margin-top: 40px;
 }
 h3.first-title {
     margin-top: 0;
+}
+h4 {
+    width: 12%;
+    background-color: #e9ecef;
+    border: 1px #000 dotted;
+    font-size: 1.2rem;
 }
 header {
     /* background-image: url(../image/header.svg);
@@ -23,8 +30,10 @@ header {
     margin-bottom: 0;
 }
 .jumbotron {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
+}
+.fa-angle-double-down {
+    color: #adb5bd;
 }
 .copyright {
     background-color: #222;
@@ -70,9 +79,8 @@ header {
 /* rwd */
 @media only screen and (max-width: 767px) {
     .jumbotron {
-        padding-top: 0;
-        padding-right: 5px;
-        padding-bottom: 0;
-        padding-left: 5px;
+    }
+    h3, h4 {
+        width: auto;
     }
 }

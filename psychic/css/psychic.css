@@ -70,8 +70,9 @@ header {
 /* rwd */
 @media only screen and (max-width: 767px) {
     .jumbotron {
+        padding-top: 0;
         padding-right: 5px;
-        padding-bottom: 10px;
+        padding-bottom: 0;
         padding-left: 5px;
     }
 }

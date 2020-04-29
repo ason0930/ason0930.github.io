@@ -56,6 +56,9 @@ header {
 .email {
     margin-top: 30px;
 }
+.query-form {
+    padding-left: 34px;
+}
 .copyright {
     background-color: #222;
     font-size: 14px;

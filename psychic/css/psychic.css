@@ -1,7 +1,8 @@
-/* 20200425 Ason */
+/* 20200429 Ason */
 /* common */
 body {
-    background-image: url(../image/bg_1.jpg);
+    background-image: url(../image/bg_2.jpg);
+    background-size: cover;
     font-family: 微軟正黑體;
     font-size: 1.1rem;
 }
@@ -11,7 +12,8 @@ h3, h4 {
 }
 h3 {
     width: 20%;
-    border: 1px #6c757d solid;
+    /* border: 1px #6c757d solid; */
+    box-shadow: 0 0 1px #1d2124;
     margin-top: 40px;
 }
 h3.first-title {
@@ -21,6 +23,12 @@ h4 {
     width: 12%;
     background-color: rgba(0,0,0,0.08);
     font-size: 1.2rem;
+}
+h5 {
+    font-weight: bold;
+}
+a:link, a:visited {
+    color: #000;
 }
 header {
     /* background-image: url(../image/header.svg);
@@ -34,7 +42,19 @@ header {
     padding: 0;
 }
 .fa-angle-double-down {
-    color: #adb5bd;
+    color: rgba(0,0,0,0.2);
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.atm li {
+    margin-right: 20px;
+}
+.fa-line {
+    width: 100px;
+    height: 100px;
+}
+.email {
+    margin-top: 30px;
 }
 .copyright {
     background-color: #222;
@@ -58,7 +78,7 @@ header {
 
 /* note */
 .note {
-    font-size: 0.9rem;
+    font-size: 1rem;
     list-style: none;
 }
 .note li {
@@ -83,5 +103,8 @@ header {
     }
     h3, h4 {
         width: auto;
+    }
+    .atm li {
+        margin-right: 10px;
     }
 }

@@ -1,5 +1,8 @@
 /* 20200429 Ason */
 /* common */
+html {
+    scroll-behavior: smooth;
+  }
 body {
     background-image: url(../image/bg_2.jpg);
     background-size: cover;
@@ -99,8 +102,37 @@ header {
     margin-left: -1em; 
     /* Also needed for space (tweak if needed) */
 }
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    padding: 6px 14px 6px;
+    border-radius: 30px;
+    font-size: 32px;
+    opacity: 0.5;
+  }
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+    opacity: 0.8;
+  }
+  #myBtn .fas.fa-arrow-up {
+    font-size: 30px;
+  }
 
 /* rwd */
+@media only screen and (max-width: 767px) {
+  #myBtn {
+      bottom: 100px;
+      right: 10px;
+  }
+}
 @media only screen and (max-width: 991px) {
     .jumbotron {
     }

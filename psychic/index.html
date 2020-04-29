@@ -28,7 +28,7 @@
 
       <!-- 主選單按鈕 開始 -->
       <div class="mainbtn">
-        <div class="btn-container" onclick="myFunction(this), mainMenuSwich(mainMenu)">
+        <div id="btnContainer" class="btn-container" onclick="myFunction(this), mainMenuSwich(mainMenu)">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
@@ -39,12 +39,12 @@
       <!-- 主選單 開始 -->
       <div id="mainMenu" class="mainmenu-container">
         <ul class="mainmenu">
-          <li><a href="#aboutMe">關於龍心</a></li>
-          <li><a href="#serviceItem">服務項目</a></li>
-          <li><a href="#openHour">營業時間</a></li>
-          <li><a href="#applyFlow">報名流程</a></li>
-          <li><a href="#contactMe">與我聯絡</a></li>
-          <li><a href="#noteMatter">注意事項</a></li>
+          <li><a href="#aboutMe" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">關於龍心</a></li>
+          <li><a href="#serviceItem" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">服務項目</a></li>
+          <li><a href="#openHour" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">營業時間</a></li>
+          <li><a href="#applyFlow" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">報名流程</a></li>
+          <li><a href="#contactMe" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">與我聯絡</a></li>
+          <li><a href="#noteMatter" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">注意事項</a></li>
         </ul>
       </div>
       <!-- 主選單 結束 -->

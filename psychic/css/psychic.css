@@ -1,4 +1,4 @@
-/* 20200429 Ason */
+/* 20200430 Ason */
 /* common */
 html {
     scroll-behavior: smooth;
@@ -26,9 +26,13 @@ h4 {
 }
 h5 {
     font-weight: bold;
+    margin-top: 20px;
 }
 a:link, a:visited {
     color: #000;
+}
+.margin-top-fix-1 {
+    margin-top: 10px !important;
 }
 .margin-bottom-fix-1 {
     margin-bottom: 30px;

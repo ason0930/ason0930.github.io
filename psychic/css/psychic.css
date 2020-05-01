@@ -1,13 +1,17 @@
-/* 20200430 Ason */
+/* 20200502 Ason */
 /* common */
 html {
     scroll-behavior: smooth;
   }
 body {
-    background-image: url(../image/bg_2.jpg);
+    background: url(../image/bg_2.jpg);
     background-size: cover;
     font-family: 微軟正黑體;
     font-size: 1.1rem;
+}
+.bg-god {
+    background: url(../image/quayu_2.svg) no-repeat top center;
+    background-size: cover;
 }
 h3, h4 {
     padding: 10px;

@@ -10,8 +10,9 @@ body {
     font-size: 1.1rem;
 }
 .bg-god {
-    background: url(../image/quayu_2.svg) no-repeat top center;
+    background: url(../image/quayu_2.svg) no-repeat;
     background-size: cover;
+    background-position: center 500px;
 }
 h3, h4 {
     padding: 10px;
@@ -19,7 +20,7 @@ h3, h4 {
 }
 h3 {
     width: 20%;
-    /* border: 1px #6c757d solid; */
+    background-color: rgba(0,0,0,0.15);
     box-shadow: 0 0 1px #1d2124;
     margin-top: 40px;
 }
@@ -90,7 +91,7 @@ header {
     display: block;
 }
 .mainmenu {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     list-style: none;
     margin-bottom: 0;
     padding-left: 0;
@@ -100,7 +101,7 @@ header {
   margin-bottom: 5px;
 }
 .about-pic-1 {
-    width: 20%;
+    width: 12%;
 }
 .fa-angle-double-down {
     color: rgba(0,0,0,0.2);
@@ -187,24 +188,28 @@ header {
 
 /* rwd */
 @media only screen and (max-width: 991px) {
-    .jumbotron {
-    }
-    h3, h4 {
-        width: auto;
+   h3 {
+        width: 30%;
+    } 
+   h4 {
+        width: 20%;
     }
     .atm li {
         margin-right: 10px;
     }
     .about-pic-1 {
-        width: 40%;
-      }
+        width: 30%;
+    }
 }
 @media only screen and (max-width: 767px) {
+    h3, h4 {
+        width: auto;
+    }
   #myBtn {
       bottom: 100px;
       right: 10px;
   }
   .about-pic-1 {
-    width: 80%;
+    width: 50%;
   }
 }

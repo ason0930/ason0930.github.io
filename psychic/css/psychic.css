@@ -99,6 +99,9 @@ header {
   text-align: center;
   margin-bottom: 5px;
 }
+.about-pic-1 {
+    width: 20%;
+}
 .fa-angle-double-down {
     color: rgba(0,0,0,0.2);
     margin-top: 15px;
@@ -183,12 +186,6 @@ header {
   }
 
 /* rwd */
-@media only screen and (max-width: 767px) {
-  #myBtn {
-      bottom: 100px;
-      right: 10px;
-  }
-}
 @media only screen and (max-width: 991px) {
     .jumbotron {
     }
@@ -198,4 +195,16 @@ header {
     .atm li {
         margin-right: 10px;
     }
+    .about-pic-1 {
+        width: 40%;
+      }
+}
+@media only screen and (max-width: 767px) {
+  #myBtn {
+      bottom: 100px;
+      right: 10px;
+  }
+  .about-pic-1 {
+    width: 80%;
+  }
 }

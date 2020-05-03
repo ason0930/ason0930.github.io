@@ -42,6 +42,9 @@ a:link, a:visited {
 .margin-bottom-fix-1 {
     margin-bottom: 30px;
 }
+.margin-fix {
+    margin: 0;
+}
 header {
     /* background-image: url(../image/header.svg);
     background-size: cover;

@@ -218,11 +218,11 @@ header {
     h3, h4 {
         width: auto;
     }
-  #myBtn {
+    #myBtn {
       bottom: 100px;
       right: 10px;
-  }
-  .about-pic-1 {
-    width: 50%;
-  }
+    }
+    .about-pic-1 {
+      width: 50%;
+    }
 }

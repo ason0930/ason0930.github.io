@@ -1,4 +1,4 @@
-<!-- Ason 20200505 -->
+<!-- Ason 2020050６ -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +16,17 @@
   <!-- 頁首 開始 -->
   <header class="jumbotron text-center">
     <a href="index.html"><img src="image/logo_title_6.svg"></a>
+
+    <!-- 主選單按鈕 開始 -->
+    <div class="mainbtn">
+      <div id="btnContainer" class="btn-container" onclick="myFunction(this), mainMenuSwich(mainMenu)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+    <!-- 主選單按鈕 結束 -->
+
   </header>
   <!-- 頁首 結束 -->
 
@@ -24,21 +35,12 @@
   <div class="container-fluid bg-god">
     <div class="row">
 
-      <!-- 主選單按鈕 開始 -->
-      <div class="mainbtn">
-        <div id="btnContainer" class="btn-container" onclick="myFunction(this), mainMenuSwich(mainMenu)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </div>
-      <!-- 主選單按鈕 結束 -->
 
       <!-- 主選單 開始 -->
       <div id="mainMenu" class="mainmenu-container">
         <ul class="mainmenu">
           <li><a href="#aboutMe" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">關於龍心</a></li>
-          <li><a href="#serviceItem" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">服務項目</a></li>
+          <li><a href="#serviceItem" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">遠距服務</a></li>
           <li><a href="#openHour" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">營業時間</a></li>
           <li><a href="#applyFlow" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">報名流程</a></li>
           <li><a href="#contactMe" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">與我聯絡</a></li>
@@ -62,35 +64,32 @@
 
       <!-- 服務項目 開始 -->
       <div id="serviceItem" class="col-sm-12 text-center service-item">
-        <h3 class="d-inline-block">服務項目</h3>
+        <h3 class="d-inline-block">遠距服務</h3>
 
         <!-- 收驚 開始 -->
         <div>
           <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left">
-            <strong>遠距收驚：</strong>不必親臨現場或使用衣物收驚，突破傳統科儀，遠距收驚更為方便、快速、有效。適用對象除了嬰幼兒、小孩及大人，還可幫助心愛的毛小孩們安魂定魄，釋放身心靈的壓力，化解來自無形世界的干擾。
+            <strong>收驚制煞：</strong>不必親臨現場或使用衣物替代，突破傳統科儀，遠距收驚制煞更為方便、快速、有效。適用對象除了受驚的嬰幼兒、小孩及大人，尤其屬於靈異敏感體質者，更可幫助寶貝的毛小孩和各種寵物們安魂定魄，釋放身心靈的壓力，並化解來自無形世界的干擾。
           </p>
-          <h5 class="d-inline-block margin-top-fix-1">方案一：NT$100元/單次</h5>
-          <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-center">適合受驚程度較為輕微者，將進行一次性收驚。</p>
-          <h5 class="d-inline-block">方案二：NT$300元/三次</h5>
-          <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-center">適合靈異敏感體質，受到無形界干擾較為嚴重者，將分成三個工作天進行，共收驚三次。</p>
+          <h5 class="d-inline-block margin-top-fix-1 lucky-money">收驚制煞/紅包隨喜</h5>
         </div>
         <!-- 收驚 結束 -->
 
         <!-- 超度 開始 -->
         <div class="margin-top-fix-2">
           <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left">
-            <strong>遠距超度：</strong>奉請主神關聖帝君、地藏王菩薩、太乙求苦天尊等諸天神佛做主，遠距超度往生的寶貝寵物，加速投胎轉世的等待時間，適用對象包括家中所有種類的寵物們。
+            <strong>超度亡靈：</strong>奉請主神關聖帝君、地藏王菩薩、太乙求苦天尊等諸天神佛做主，遠距超度往生者，加快投胎轉世的進度，適用對象包括已離開人世的親朋好友及心愛寵物之亡靈。
           </p>
-          <h5 class="d-inline-block margin-top-fix-1 lucky-money">超度寵物/紅包隨喜</h5>
+          <h5 class="d-inline-block margin-top-fix-1 lucky-money">超度亡靈/紅包隨喜</h5>
         </div>
         <!-- 超度 結束 -->
 
         <!-- 招財開運 開始 -->
         <div class="margin-top-fix-2 margin-bottom-fix-1">
           <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left">
-            <strong>遠距開運：</strong>奉請五路財神做主，遠距施以無形之開運招財符令，此法調用信眾先天本命財庫，提早聚集財氣能量運用，然世間之人財富皆有定數，非人人可得其效之用也。
+            <strong>開運招財：</strong>奉請五路財神做主，遠距施以無形之開運招財符令，此法調用信眾先天本命財庫，提早聚集財氣能量運用，然世間之人財富皆有定數，非人人可得其效之用也。
           </p>
-          <h5 class="d-inline-block margin-top-fix-1 lucky-money">開運招財/紅包隨喜</h5>
+          <h5 class="d-inline-block margin-top-fix-1 lucky-money">招財開運/紅包隨喜</h5>
         </div>
         <!-- 招財開運 結束 -->
 
@@ -136,22 +135,24 @@
             <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left">一般報名格式：</p>
             <ul
               class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left list-unstyled query-form margin-bottom-fix-1">
+              <li>項目：收驚、超度或開運(擇一)</li>
               <li>姓名：龍OO(出生真實姓名)</li>
               <li>性別：男或女</li>
               <li>年齡：1</li>
-              <li>生日：OO年OO月OO日(註明國曆或農曆)</li>
-              <li>住址：新北巿XX區XX路XX號XX樓</li>
-              <li>帳號：OOOOO(您的銀行帳號後五碼)</li>
+              <li>生日：西元OOOO年OO月OO日</li>
+              <li>住址：XX巿XX區XX路XX號XX樓</li>
+              <li>帳號：OOOOO(您的銀行後五碼)</li>
             </ul>
             <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left">寵物報名格式：</p>
             <ul class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left list-unstyled query-form">
+              <li>項目：收驚或超度(擇一)</li>
               <li>主人：龍OO</li>
               <li>名字：OO</li>
               <li>性別：公或母</li>
-              <li>忌日：OO年OO月OO日(註明國曆或農曆)</li>
+              <li>忌日：西元OOOO年OO月OO日</li>
               <li>品種：狗狗、猫咪或其他寵物種類</li>
-              <li>住址：新北巿XX區XX路XX號XX樓</li>
-              <li>帳號：OOOOO(您的銀行帳號後五碼)</li>
+              <li>住址：XX巿XX區XX路XX號XX樓</li>
+              <li>帳號：OOOOO(您的銀行後五碼)</li>
             </ul>
           </div>
           <!-- 填寫資料 結束 -->
@@ -161,7 +162,7 @@
           <div class="col-sm-12 text-center">
             <h4 class="d-inline-block">通靈辦事</h4>
             <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left">
-              確認報名資料及費用收取完成之後，最晚24小時內回復您預計通靈辦事的時段，若遇特殊情況將會提前告知儀式延後的時間。</p>
+              確認報名資料及隨喜紅包收取完成之後，最晚24小時內回復您預計通靈辦事的時段，若遇特殊情況將會提前告知儀式延後的時間。</p>
           </div>
           <!-- 通靈辦事 結束 -->
 
@@ -196,11 +197,10 @@
         <ul class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left note">
           <li>何謂「<a href="https://religion.moi.gov.tw/Knowledge/Content?ci=2&cid=6" target="new">收驚</a>」？什麼是「<a
               href="https://religion.moi.gov.tw/Knowledge/Content?ci=2&cid=328" target="new">靈乩</a>」？</li>
-          <li>確認費用收取完成後，最晚24小時內回復您預計收驚的時段，若遇特殊情況將會提前告知儀式延後的時間。</li>
           <li>個人資料除了通靈辦事用途，本宮不會另做他用，上呈神尊查核的問事紅單，將於儀式結束後當日隨金紙火化完畢。</li>
-          <li>基於信眾與神明之間的信任關係，恕不提供個案任何形式的收驚過程之証明，包含：錄音、錄影、攝影及相關電子檔案或書面文件等。</li>
+          <li>基於信眾與神明及法師之間的信任關係，恕不提供個案任何形式的演法過程之証明，包含：錄音、錄影、攝影及相關電子檔案或書面文件等。</li>
           <li>下單前請考慮清楚，訂單成立後，通靈辦事將如期舉行，恕不退費。</li>
-          <li>本宮僅開放「收驚、超度、開運」之遠距服務。</li>
+          <li>本宮僅開放「收驚制煞、超度亡靈、開運招財」之遠距服務。</li>
           <li>防止詐騙，訂單完成後，本宮不會詢問或更改付款方式。</li>
         </ul>
       </div>

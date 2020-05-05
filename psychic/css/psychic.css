@@ -39,6 +39,9 @@ a:link, a:visited {
 .margin-top-fix-1 {
     margin-top: 10px !important;
 }
+.margin-top-fix-2 {
+    margin-top: 60px;
+}
 .margin-bottom-fix-1 {
     margin-bottom: 30px;
 }
@@ -75,7 +78,7 @@ header {
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
-  }  
+  }   
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
@@ -187,6 +190,13 @@ header {
   }
   #myBtn .fas.fa-arrow-up {
     font-size: 30px;
+  }
+  .service-item strong {
+      font-size: 1.2rem;
+  }
+  .lucky-money {
+      font-size: 1.5rem;
+      font-weight: bold;
   }
 
 /* rwd */

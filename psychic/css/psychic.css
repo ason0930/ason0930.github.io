@@ -1,4 +1,4 @@
-/* 20200502 Ason */
+/* 20200507 Ason */
 /* common */
 html {
     scroll-behavior: smooth;
@@ -125,7 +125,7 @@ header {
     margin-top: 30px;
 }
 .query-form {
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.5);
     padding: 20px 34px;
 }
 .copyright {

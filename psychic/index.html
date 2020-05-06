@@ -17,7 +17,12 @@
   <header class="jumbotron text-center">
     <a href="index.html"><img src="image/logo_title_6.svg"></a>
 
-    <!-- 主選單按鈕 開始 -->
+
+  </header>
+  <!-- 頁首 結束 -->
+
+  <!-- 主選單按鈕 開始 -->
+  <div class="mainbtn-sticky">
     <div class="mainbtn">
       <div id="btnContainer" class="btn-container" onclick="myFunction(this), mainMenuSwich(mainMenu)">
         <div class="bar1"></div>
@@ -25,30 +30,27 @@
         <div class="bar3"></div>
       </div>
     </div>
-    <!-- 主選單按鈕 結束 -->
+  </div>
+  <!-- 主選單按鈕 結束 -->
 
-  </header>
-  <!-- 頁首 結束 -->
-
+  <!-- 主選單 開始 -->
+  <div id="mainMenu" class="mainmenu-container">
+    <ul class="mainmenu">
+      <li><a href="#aboutMe" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">關於龍心</a></li>
+      <li><a href="#serviceItem" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">遠距服務</a></li>
+      <li><a href="#luckyMoney" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">服務費用</a></li>
+      <li><a href="#openHour" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">營業時間</a></li>
+      <li><a href="#applyFlow" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">報名流程</a></li>
+      <li><a href="#contactMe" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">與我聯絡</a></li>
+      <li><a href="#noteMatter" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">注意事項</a></li>
+    </ul>
+  </div>
+  <!-- 主選單 結束 -->
 
   <!-- 主內容開始 -->
   <div class="container-fluid bg-god">
     <div class="row">
 
-
-      <!-- 主選單 開始 -->
-      <div id="mainMenu" class="mainmenu-container">
-        <ul class="mainmenu">
-          <li><a href="#aboutMe" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">關於龍心</a></li>
-          <li><a href="#serviceItem" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">遠距服務</a></li>
-          <li><a href="#luckyMoney" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">服務費用</a></li>
-          <li><a href="#openHour" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">營業時間</a></li>
-          <li><a href="#applyFlow" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">報名流程</a></li>
-          <li><a href="#contactMe" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">與我聯絡</a></li>
-          <li><a href="#noteMatter" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">注意事項</a></li>
-        </ul>
-      </div>
-      <!-- 主選單 結束 -->
 
       <!-- 關於龍心 開始 -->
       <div id="aboutMe" class="col-sm-12 text-center">
@@ -66,7 +68,7 @@
       <!-- 服務項目 開始 -->
       <div id="serviceItem" class="col-sm-12 text-center service-item">
         <h3 class="d-inline-block">遠距服務</h3>
-        
+
         <!-- 通靈問事 開始 -->
         <div>
           <h5 class="d-inline-block margin-top-fix-1 lucky-money">通靈問事</h5>

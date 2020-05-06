@@ -60,9 +60,15 @@ header {
     margin-bottom: 0;
     padding: 0;
 }
+.mainbtn-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 101;
+}
 .mainbtn {
-    width:100%;
-    position:relative
+    width: 100%;
+    position: relative;
 }
 .btn-container {
     display: inline-block;
@@ -91,7 +97,13 @@ header {
 .mainmenu-container {
     display: none;
     width: 100%;
-    padding-top: 30px;
+    background-color: rgba(181,181,181,0.88);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .mainmenu-container.change  {
     display: block;

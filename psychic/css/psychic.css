@@ -191,7 +191,7 @@ header {
   #myBtn .fas.fa-arrow-up {
     font-size: 30px;
   }
-  .service-item strong {
+  .service-item strong, .fill-data strong {
       font-size: 1.2rem;
   }
   .lucky-money {

@@ -109,7 +109,7 @@ header {
     display: block;
 }
 .mainmenu {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     list-style: none;
     margin-bottom: 0;
     padding-left: 0;
@@ -241,5 +241,8 @@ header {
     }
     .about-pic-1 {
       width: 50%;
+    }
+    .mainmenu {
+    font-size: 1.4rem;
     }
 }

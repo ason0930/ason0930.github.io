@@ -12,40 +12,53 @@
 </head>
 
 <body>
-
-  <!-- 頁首 開始 -->
-  <header class="jumbotron text-center">
-    <a href="index.html"><img src="image/logo_title_6.svg"></a>
-
-
-  </header>
-  <!-- 頁首 結束 -->
-
-  <!-- 主選單按鈕 開始 -->
-  <div class="mainbtn-sticky">
-    <div class="mainbtn">
+  <div id="goTop"></div>
+  
+  <!-- 桌機版 主選單按鈕 開始 -->
+  <!-- <div class="mainbtn-sticky"> -->
+    <div class="mainbtn d-none d-sm-block">
       <div id="btnContainer" class="btn-container" onclick="myFunction(this), mainMenuSwich(mainMenu)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
     </div>
-  </div>
-  <!-- 主選單按鈕 結束 -->
+  <!-- </div> -->
+  <!-- 桌機版 主選單按鈕 結束 -->
 
-  <!-- 主選單 開始 -->
+  
+  <!-- 主選單內容 開始 -->
   <div id="mainMenu" class="mainmenu-container">
     <ul class="mainmenu">
-      <li><a href="#aboutMe" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">關於龍心</a></li>
-      <li><a href="#serviceItem" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">遠距服務</a></li>
-      <li><a href="#luckyMoney" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">服務費用</a></li>
-      <li><a href="#openHour" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">營業時間</a></li>
-      <li><a href="#applyFlow" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">報名流程</a></li>
-      <li><a href="#contactMe" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">與我聯絡</a></li>
-      <li><a href="#noteMatter" onclick="myFunction(btnContainer), mainMenuSwich(mainMenu)">注意事項</a></li>
+      <li><a href="#aboutMe" onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">關於龍心</a></li>
+      <li><a href="#serviceItem" onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">遠距服務</a></li>
+      <li><a href="#luckyMoney" onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">服務費用</a></li>
+      <li><a href="#openHour" onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">營業時間</a></li>
+      <li><a href="#applyFlow" onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">報名流程</a></li>
+      <li><a href="#contactMe" onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">與我聯絡</a></li>
+      <li><a href="#noteMatter" onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">注意事項</a></li>
+      <li><a href="#goTop" onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">回到頁首</a></li>
     </ul>
   </div>
-  <!-- 主選單 結束 -->
+  <!-- 主選單內容 結束 -->
+  
+  <!-- 頁首 開始 -->
+  <header class="jumbotron text-center">
+    <a href="index.html"><img src="image/logo_title_6.svg"></a>
+  </header>
+  <!-- 頁首 結束 -->
+  
+  <!-- 手機版 主選單按鈕 開始 -->
+  <!-- <div class="mainbtn-sticky"> -->
+    <div class="mainbtn d-block d-sm-none">
+      <div id="btnContainerSm" class="btn-container" onclick="myFunction(this), mainMenuSwich(mainMenu)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+  <!-- </div> -->
+  <!-- 手機版 主選單按鈕 結束 -->
 
   <!-- 主內容開始 -->
   <div class="container-fluid bg-god">
@@ -73,7 +86,7 @@
         <div>
           <h5 class="d-inline-block margin-top-fix-1 lucky-money">通靈問事</h5>
           <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left">
-            凡問事者之身體、事業、感情、婚姻、運途、財運或其他事項均可問之。
+            凡問事者之身心、事業、感情、婚姻、運途、財運或其他靈異相闗事件均可問之。
           </p>
         </div>
         <!-- 通靈問事 結束 -->
@@ -154,6 +167,22 @@
                 href="mailto:psychic0807@gmail.com?Subject=收驚問事單">電子信箱</a>、<a href="https://line.me/ti/p/rSZkBoi-qK"
                 target="new">LINE</a>或是<a href="https://t.me/psychic0807" target="new">Telegrame</a>。
             </p>
+            <!-- <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left"><strong>通靈問事：</strong></p> -->
+            <ul
+              class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left list-unstyled query-form margin-bottom-fix-1">
+              <li><strong>通靈問事</strong></li>
+              <li>姓名：OOO(出生真實姓名)</li>
+              <li>性別：男或女</li>
+              <li>年齡：O</li>
+              <li>生日：O年O月O日(農曆)</li>
+              <li>住址：O巿O區O路O號O樓</li>
+              <li>電話：您的LINE或Telegram</li>
+              <li>電郵：您的電子信箱</li>
+              <li>帳號：OOOOO(您的銀行後五碼)</li>
+              <li>提問：<i class="square">&#9632;</i>身心<i class="square">&#9632;</i>事業<i class="square">&#9632;</i>感情<i
+                  class="square">&#9632;</i>婚姻<i class="square">&#9632;</i>運途<i class="square">&#9632;</i>財運<i
+                  class="square">&#9632;</i>其他(擇一)</li>
+            </ul>
             <!-- <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left"><strong>招財開運：</strong></p> -->
             <ul
               class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left list-unstyled query-form margin-bottom-fix-1">
@@ -163,6 +192,8 @@
               <li>年齡：O</li>
               <li>生日：O年O月O日(農曆)</li>
               <li>住址：O巿O區O路O號O樓</li>
+              <li>電話：您的LINE或Telegram</li>
+              <li>電郵：您的電子信箱</li>
               <li>帳號：OOOOO(您的銀行後五碼)</li>
             </ul>
             <!-- <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left"><strong>收驚制煞：</strong></p> -->
@@ -174,6 +205,8 @@
               <li>年齡：O</li>
               <li>生日：O年O月O日(農曆)</li>
               <li>住址：O巿O區O路O號O樓</li>
+              <li>電話：您的LINE或Telegram</li>
+              <li>電郵：您的電子信箱</li>
               <li>帳號：OOOOO(您的銀行後五碼)</li>
             </ul>
             <!-- <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left"><strong>寵物收驚：</strong></p> -->
@@ -185,6 +218,8 @@
               <li>品種：狗狗、猫咪或其他類別</li>
               <li>性別：公或母</li>
               <li>住址：O巿O區O路O號O樓</li>
+              <li>電話：您的LINE或Telegram</li>
+              <li>電郵：您的電子信箱</li>
               <li>帳號：OOOOO(您的銀行後五碼)</li>
             </ul>
             <!-- <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left"><strong>超度亡者：</strong></p> -->
@@ -197,6 +232,8 @@
               <li>生日：O年O月O日(農曆)</li>
               <li>殁日：O年O月O日(農曆)</li>
               <li>住址：O巿O區O路O號O樓</li>
+              <li>電話：您的LINE或Telegram</li>
+              <li>電郵：您的電子信箱</li>
               <li>帳號：OOOOO(您的銀行後五碼)</li>
             </ul>
             <!-- <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left"><strong>超度寵物：</strong></p> -->
@@ -208,6 +245,8 @@
               <li>品種：狗狗、猫咪或其他類別</li>
               <li>性別：公或母</li>
               <li>住址：O巿O區O路O號O樓</li>
+              <li>電話：您的LINE或Telegram</li>
+              <li>電郵：您的電子信箱</li>
               <li>帳號：OOOOO(您的銀行後五碼)</li>
             </ul>
             <!-- <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left"><strong>超度嬰靈：</strong></p> -->
@@ -219,6 +258,8 @@
               <li>年齡：O</li>
               <li>生日：O年O月O日(農曆)</li>
               <li>住址：O巿O區O路O號O樓</li>
+              <li>電話：您的LINE或Telegram</li>
+              <li>電郵：您的電子信箱</li>
               <li>帳號：OOOOO(您的銀行後五碼)</li>
             </ul>
             <!-- <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left"><strong>超度冤親債主：</strong></p> -->
@@ -230,6 +271,8 @@
               <li>年齡：O</li>
               <li>生日：O年O月O日(農曆)</li>
               <li>住址：O巿O區O路O號O樓</li>
+              <li>電話：您的LINE或Telegram</li>
+              <li>電郵：您的電子信箱</li>
               <li>帳號：OOOOO(您的銀行後五碼)</li>
             </ul>
           </div>
@@ -274,8 +317,9 @@
         <h3 class="d-inline-block">注意事項</h3>
         <ul class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left note">
           <li>本宮僅開放「收驚制煞、超度亡靈、開運招財」之遠距服務。</li>
+          <li>全程使用電子信箱及網路通訊軟體LINE或Telegram連絡相關事宜，必要時可利用免費語音通話，恕不接受視訊通話。</li>
           <li>單筆訂單只提供單項服務，不接受單次交易多項服務，如需多項濟世服務請分開單獨報名。</li>
-          <li>通靈問事每次報名可供詢問單一主題，若需查詢多項問題，請再次參加報名。</li>
+          <li>通靈問事每次報名可供提問單一主題，若需查詢多項問題，請再依序預約問事。</li>
           <li>基於信眾與神明及法師之間的信任關係，恕不提供個案任何形式的演法過程之証明，包含：錄音、錄影、攝影及相關電子檔案或書面文件等。</li>
           <li>個人資料除了通靈辦事用途，本宮不會另做他用，上呈神尊查核的問事紅單，將於儀式結束後當日隨金紙火化完畢。</li>
           <li>報名前請考慮清楚，訂單成立後，通靈辦事將如期舉行，除特殊原因外恕不退費。</li>
@@ -314,6 +358,9 @@
   <script>
     function myFunction(x) {
       x.classList.toggle("change");
+    }
+    function myFunction2(y) {
+      y.classList.toggle("change");
     }
   </script>
   <script>

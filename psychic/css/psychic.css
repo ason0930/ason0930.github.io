@@ -219,8 +219,13 @@ header {
       font-size: 1.2rem;
   }
  .fill-data strong {
-      font-size: 1.6rem;
+      font-size: 2rem;
+      color: #031854;
   }
+  .fill-data b {
+    font-size: 1.1rem;
+    color: #222;
+}
   .lucky-money {
       font-size: 1.5rem;
       font-weight: bold;
@@ -230,6 +235,10 @@ header {
     font-style: normal;
     color: #212529;
     vertical-align: text-bottom;
+  }
+  .ask-topic {
+      /* font-size: 1.2rem;
+      font-weight: bold; */
   }
 
 /* rwd */

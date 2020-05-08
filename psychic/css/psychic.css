@@ -1,4 +1,4 @@
-/* 20200507 Ason */
+/* 20200508 Ason */
 /* common */
 html {
     /* scroll-behavior: smooth; */
@@ -10,9 +10,9 @@ body {
     font-size: 1.1rem;
 }
 .bg-god {
-    background: url(../image/quayu_2.svg) no-repeat;
+    /* background: url(../image/quayu_2.svg) no-repeat;
     background-size: cover;
-    background-position: center 500px;
+    background-position: center 500px; */
 }
 h3, h4 {
     padding: 10px;
@@ -102,6 +102,10 @@ header {
     width: 100%;
     height: 100vh;
     background-color: rgba(181,181,181,0.98);
+    background-image: url(../image/quayu_2_2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     /* padding-top: 100px;
     padding-bottom: 50px; */
     /* position: -webkit-sticky;

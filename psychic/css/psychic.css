@@ -172,17 +172,16 @@ header {
 
 /* note */
 .note {
-    font-size: 1rem;
-    list-style: none;
+    list-style: square;
 }
 .note li {
+    font-size: 0.8rem;
+    color: #495057;
     margin-bottom: 15px;
 }
-.note li::before {
-    display: inline-block;
-    content: "\2219";
-    font-size: 12px;
-    margin-left: -1em; 
+.note li > span {
+    font-size: 1rem;
+    color: black;
 }
 #myBtn {
     display: none;
@@ -269,5 +268,9 @@ header {
     }
     .mainmenu {
     font-size: 1.3rem;
+    }
+    .note {
+        padding-left: 40px;
+        padding-right: 30px;
     }
 }

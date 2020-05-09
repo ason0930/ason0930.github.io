@@ -1,4 +1,4 @@
-<!-- Ason 20200507 -->
+<!-- Ason 20200509 -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +17,8 @@
   <!-- 桌機版 主選單按鈕 開始 -->
   <!-- <div class="mainbtn-sticky"> -->
   <div class="mainbtn d-none d-sm-block">
-    <div id="btnContainer" class="btn-container" onclick="myFunction(this), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">
+    <div id="btnContainer" class="btn-container"
+      onclick="mainBtn(this), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
@@ -32,21 +33,21 @@
     <div id="mainMenu" class="mainmenu-container">
       <ul class="mainmenu">
         <li><a href="#aboutMe"
-            onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">龍心法師</a></li>
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">龍心法師</a></li>
         <li><a href="#serviceItem"
-            onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">通靈辦事</a></li>
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">通靈辦事</a></li>
         <li><a href="#luckyMoney"
-            onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">紅包隨喜</a></li>
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">紅包隨喜</a></li>
         <li><a href="#openHour"
-            onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">濟世時間</a></li>
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">濟世時間</a></li>
         <li><a href="#applyFlow"
-            onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">預約報名</a></li>
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">預約報名</a></li>
         <li><a href="#contactMe"
-            onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">與我聯絡</a></li>
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">與我聯絡</a></li>
         <li><a href="#noteMatter"
-            onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">注意事項</a></li>
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">注意事項</a></li>
         <li><a href="#goTop"
-            onclick="myFunction(btnContainer), myFunction2(btnContainerSm), mainMenuSwich(mainMenu)">回到頁首</a></li>
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">回到頁首</a></li>
       </ul>
     </div>
   </div>
@@ -61,7 +62,7 @@
   <!-- 手機版 主選單按鈕 開始 -->
   <!-- <div class="mainbtn-sticky"> -->
   <div class="mainbtn d-block d-sm-none">
-    <div id="btnContainerSm" class="btn-container" onclick="myFunction(this), mainMenuSwich(mainMenu)">
+    <div id="btnContainerSm" class="btn-container" onclick="mainBtn(this), mainMenuSwich(mainMenu)">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
@@ -92,14 +93,14 @@
       <div id="serviceItem" class="col-sm-12 text-center service-item">
         <h3 class="d-inline-block">通靈辦事</h3>
 
-        <!-- 求神問卜 開始 -->
+        <!-- 求神問事 開始 -->
         <div>
-          <h5 class="d-inline-block margin-top-fix-1 lucky-money">求神問卜</h5>
+          <h5 class="d-inline-block margin-top-fix-1 lucky-money">求神問事</h5>
           <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left">
             凡問事者之身心、靈體、事業、感情、婚姻、運途、財運或其他靈異事件皆可誠心問之。
           </p>
         </div>
-        <!-- 求神問卜 結束 -->
+        <!-- 求神問事 結束 -->
 
         <!-- 招財開運 開始 -->
         <div class="margin-top-fix-2 margin-bottom-fix-1">
@@ -132,7 +133,7 @@
         <div class="margin-top-fix-2">
           <h5 class="d-inline-block margin-top-fix-1 lucky-money">神佛做主</h5>
           <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left">
-            以上聖事辦理，奉請主神關聖帝君、三清道祖、東華帝君、王母娘娘、九天玄女、準提佛母、地母娘娘、梨山母娘、皇媽娘娘、女媧娘娘、玉皇上帝、太乙求苦天尊、豁落靈官王天君、五路財神、福德正神、三寶佛祖、觀音佛祖、地藏王菩薩等諸天神佛做主。
+            以上聖事，恭請神尊關聖帝君開示辦理，依照辦事科別和信眾的實際需求，同時奉請眾天神佛做主護持，庇佑蒼生。
           </p>
         </div>
         <!-- 神佛做主 結束 -->
@@ -184,12 +185,12 @@
             <h4 class="d-inline-block">填寫資料</h4>
             <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left">填寫以下報名資料後，請傳送到我的<a
                 href="mailto:psychic0807@gmail.com?Subject=預約報名">電子信箱</a>、<a href="https://line.me/ti/p/rSZkBoi-qK"
-                target="new">LINE</a>或是<a href="https://t.me/psychic0807" target="new">Telegrame</a>。
+                target="new">LINE</a>或是<a href="https://t.me/psychic0807" target="new">Telegram</a>。
             </p>
             <!-- <p class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left"><strong>通靈問事：</strong></p> -->
             <ul
               class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left list-unstyled query-form margin-bottom-fix-1">
-              <li><strong>求神問卜</strong></li>
+              <li><strong>求神問事</strong></li>
               <li><b>請示：</b>身心、靈體、事業、感情、婚姻、運途、財運、其他(擇一)</li>
               <li><b>姓名：</b>OOO(出生真實姓名)</li>
               <li><b>性別：</b>男或女</li>
@@ -323,7 +324,7 @@
           <a href="https://t.me/psychic0807" target="new"><img class="qrcode-telegram rounded"
               src="image/qrcode_telegram.svg" alt="Telegram QR Code"></a>
         </p>
-        <p class="margin-fix">Telegrame ID:PSYCHIC0807</p>
+        <p class="margin-fix">Telegram ID:PSYCHIC0807</p>
         <p class="margin-bottom-fix-1"><a href="https://t.me/psychic0807" target="new">加入我的Telegram</a></p>
         <p class="email">Email: <a href="mailto:psychic0807@gmail.com?Subject=預約報名">psychic0807@gmail.com</a></p>
       </div>
@@ -333,7 +334,7 @@
       <div id="noteMatter" class="col-sm-12 text-center">
         <h3 class="d-inline-block">注意事項</h3>
         <ul class="col-sm-6 offset-sm-3 col-lg-4 offset-lg-4 text-left note">
-          <li>本宮僅開放「求神問卜、開運招財、收驚制煞、超度亡靈」之遠距服務。</li>
+          <li>本宮僅開放「求神問事、開運招財、收驚制煞、超度亡靈」之遠距服務。</li>
           <li>全程使用電子信箱及網路通訊軟體LINE或Telegram連絡相關事宜，必要時可利用免費語音通話，恕不接受視訊通話。</li>
           <li>單筆訂單只提供單項服務，不接受單次交易多項服務，如需多項濟世服務請分開單獨報名。</li>
           <li>通靈問事每次報名可供提問單一主題，若需查詢多項問題，請再依序預約問事。</li>
@@ -373,10 +374,10 @@
   <!-- 回頁頂 結束 -->
 
   <script>
-    function myFunction(x) {
+    function mainBtn(x) {
       x.classList.toggle("change");
     }
-    function myFunction2(y) {
+    function mainBtnSm(y) {
       y.classList.toggle("change");
     }
     function mainMenuSwich(x) {

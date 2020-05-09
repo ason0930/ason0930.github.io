@@ -106,10 +106,6 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    /* padding-top: 100px;
-    padding-bottom: 50px; */
-    /* position: -webkit-sticky;
-    position: sticky; */
     position: fixed;
     top: 0;
     left: 0;
@@ -123,8 +119,6 @@ header {
     list-style: none;
     margin-bottom: 0;
     padding-left: 0;
-    /* padding-bottom: 100%; */
-    /* padding-bottom: calc(100% - 1000px); */
 }
 .mainmenu li {
   text-align: center;
@@ -185,16 +179,10 @@ header {
     margin-bottom: 15px;
 }
 .note li::before {
-    content: "\2219";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    display: inline-block;
+    content: "\2219";
     font-size: 12px;
-    color: ##6c757d; /* Change the color */
-    /* font-weight: bold;  */
-    /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; 
-    /* Also needed for space (tweak if needed) */
     margin-left: -1em; 
-    /* Also needed for space (tweak if needed) */
 }
 #myBtn {
     display: none;
@@ -213,7 +201,7 @@ header {
     opacity: 0.5;
   }
   #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #555;
     opacity: 0.8;
   }
   #myBtn .fas.fa-arrow-up {
@@ -224,7 +212,7 @@ header {
   }
  .fill-data strong {
       font-size: 2rem;
-      color: #031854;
+      color: #900;
   }
   .fill-data b {
     font-size: 1.1rem;
@@ -239,10 +227,6 @@ header {
     font-style: normal;
     color: #212529;
     vertical-align: text-bottom;
-  }
-  .ask-topic {
-      /* font-size: 1.2rem;
-      font-weight: bold; */
   }
 
 /* rwd */

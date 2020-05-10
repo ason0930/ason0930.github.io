@@ -16,9 +16,11 @@
 
   <!-- 桌機版 主選單按鈕 開始 -->
   <!-- <div class="mainbtn-sticky"> -->
-  <div class="mainbtn d-none d-sm-block">
-    <div id="btnContainer" class="btn-container"
-      onclick="mainBtn(this), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">
+  <div class="mainbtn">
+    <!-- <div class="mainbtn d-none d-sm-block"> -->
+    <div id="btnContainer" class="btn-container" onclick="mainBtn(this), mainMenuSwich(mainMenu)">
+      <!-- <div id="btnContainer" class="btn-container"
+      onclick="mainBtn(this), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)"> -->
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
@@ -51,6 +53,28 @@
       </ul>
     </div>
   </div>
+  <!-- <div class="mainmenu-bg">
+    <div id="mainMenu" class="mainmenu-container">
+      <ul class="mainmenu">
+        <li><a href="#aboutMe"
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">龍心法師</a></li>
+        <li><a href="#serviceItem"
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">通靈辦事</a></li>
+        <li><a href="#luckyMoney"
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">紅包隨喜</a></li>
+        <li><a href="#openHour"
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">濟世時間</a></li>
+        <li><a href="#applyFlow"
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">預約報名</a></li>
+        <li><a href="#contactMe"
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">與我聯絡</a></li>
+        <li><a href="#noteMatter"
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">注意事項</a></li>
+        <li><a href="#goTop"
+            onclick="mainBtn(btnContainer), mainBtnSm(btnContainerSm), mainMenuSwich(mainMenu)">回到頁首</a></li>
+      </ul>
+    </div>
+  </div> -->
   <!-- 主選單內容 結束 -->
 
   <!-- 頁首 開始 -->
@@ -61,13 +85,13 @@
 
   <!-- 手機版 主選單按鈕 開始 -->
   <!-- <div class="mainbtn-sticky"> -->
-  <div class="mainbtn d-block d-sm-none">
+  <!-- <div class="mainbtn d-block d-sm-none">
     <div id="btnContainerSm" class="btn-container" onclick="mainBtn(this), mainMenuSwich(mainMenu)">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
-  </div>
+  </div> -->
   <!-- </div> -->
   <!-- 手機版 主選單按鈕 結束 -->
 
@@ -370,9 +394,9 @@
     function mainBtn(x) {
       x.classList.toggle("change");
     }
-    function mainBtnSm(y) {
-      y.classList.toggle("change");
-    }
+    // function mainBtnSm(y) {
+    //   y.classList.toggle("change");
+    // }
     function mainMenuSwich(x) {
       x.classList.toggle("change");
     }

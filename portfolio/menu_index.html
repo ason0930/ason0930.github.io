@@ -1,0 +1,116 @@
+
+<script src="https://kit.fontawesome.com/aa6afd6828.js"></script>
+<header>
+    <div class="container-fluid padFix">
+        <div class="row marFix">
+            <div class="col-md-12 padFix">
+                <div class="header-bg">
+                    <div class="header">
+                        <div id="btnHome-xs" class="invisible"><a href="index.html"><i class="fas fa-home"></i></a>
+                        </div>
+                        <div id="topNav-xs" class="visible-xs" onclick="openNav()"><span
+                                class="fas fa-bars fa-2x"></span></div>
+                        <div class="pic-title-1 js-pic-title-1"><a href="index.html"><img src="images/logo.svg"
+                                    title="回首頁"></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu: desktop & pad start-->
+            <div class="col-md-12 padFix hidden-xs">
+                <div id="topNav-lg">
+                    <ul>
+                        <li><a href="javascript:void(0);" class="btn-me">Designer</a></li>
+                        <li><a href="javascript:void(0);" class="btn-web">Web Design</a></li>
+                        <li><a href="javascript:void(0);" class="btn-2d">Visual Design</a></li>
+                    </ul>
+                    <div id="nav-me" class="topNavList-bg posFix">
+                        <div class="btnClose">&times;</div>
+                        <div class="topNavList-lg">
+                            <ul class="marFix-designer">
+                                <li><a href="index.html">作品集精選</a></li>
+                                <li><a href="profile.html">設計師簡介</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="nav-web" class="topNavList-bg posFix">
+                        <div class="btnClose">&times;</div>
+                        <div class="topNavList-lg">
+                            <ul class="marFix-web">
+                                <!-- <li><a href="event_rwd.html">活動網站(RWD)</a></li> -->
+                                <li><a href="event.html">活動網站</a></li>
+                                <!-- <li><a href="page_rwd.html">靜態頁面(RWD)</a></li> -->
+                                <li><a href="page.html">靜態頁面</a></li>
+                                <li><a href="website.html">網站版型</a></li>
+                                <li><a href="edm.html">電子報</a></li>
+                                <li><a href="banner.html">橫幅廣告</a></li>
+                                <li><a href="app.html">單頁應用程式(SPA)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="nav-2d" class="topNavList-bg posFix">
+                        <div class="btnClose">&times;</div>
+                        <div class="topNavList-lg">
+                            <ul class="marFix-graphic">
+                                <li><a href="logo.html">商標</a></li>
+                                <li><a href="dm.html">行銷宣傳物</a></li>
+                                <li><a href="drawing.html">繪畫</a></li>
+                                <li><a href="card.html">卡片/名片</a></li>
+                                <!-- <li><a href="poster.html">海報</a></li> -->
+                                <li><a href="3d_model.html">3D模型</a></li>
+                                <li><a href="other.html">其他製作物</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu: desktop & tablet end-->
+
+            <!-- Menu: phone start-->
+            <div id="topNavList-xs" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul>
+                    <li><span>Designer</span>
+                        <ul>
+                            <li><a href="index.html">作品集精選</a></li>
+                            <li><a href="profile.html">設計師簡介</a></li>
+                        </ul>
+                    </li>
+                    <li><span>Web Design</span>
+                        <ul>
+                            <!-- <li><a href="event_rwd.html">活動網站(RWD)</a></li> -->
+                            <li><a href="event.html">活動網站</a></li>
+                            <!-- <li><a href="page_rwd.html">靜態頁面(RWD)</a></li> -->
+                            <li><a href="page.html">靜態頁面</a></li>
+                            <li><a href="website.html">網站版型</a></li>
+                            <li><a href="edm.html">電子報</a></li>
+                            <li><a href="banner.html">橫幅廣告</a></li>
+                            <li><a href="app.html">單頁應用程式(SPA)</a></li>
+                        </ul>
+                    </li>
+                    <li><span>Visual Design</span>
+                        <ul>
+                            <li><a href="logo.html">商標</a></li>
+                            <li><a href="dm.html">行銷宣傳物</a></li>
+                            <li><a href="drawing.html">繪畫</a></li>
+                            <li><a href="card.html">卡片/名片</a></li>
+                            <!-- <li><a href="poster.html">海報</a></li> -->
+                            <li><a href="3d_model.html">3D模型</a></li>
+                            <li><a href="other.html">其他製作物</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Menu: phone end-->
+
+        </div>
+    </div>
+</header>
+<script src="js/nav.js"></script>
+
+<!-- index logo animation start -->
+<script>
+    TweenMax.from(".js-pic-title-1", 1, { ease: Power2.easeOut, y: 100, opacity: 0, scale: 0.9 });
+
+</script>
+<!-- index logo animation end -->

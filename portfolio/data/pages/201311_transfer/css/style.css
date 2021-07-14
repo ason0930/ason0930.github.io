@@ -1,0 +1,161 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+body {
+	background-image:url(../images/body-bg.png);
+	background-repeat:repeat-x;
+	background-position:top center;
+	background-color:#d9d9d9;
+}
+.header-bg {
+	width:100%;
+	height:28px;
+	background-color:#2e2e2e;
+}
+.header-left {
+	width:467px;
+	height:28px;
+	background-image:url(../images/header-left.gif);
+	background-repeat:no-repeat;
+	float:left;
+}
+.header-right {
+	width:232px;
+	height:28px;
+	background-image:url(../images/header-right.gif);
+	background-repeat:no-repeat;
+	float:right;
+}
+div#job-wrap {
+	width:990px;
+	margin:0px auto;
+}
+div#mainContent {
+	width:100%;
+	height:582px;
+	position:relative;
+}
+.link-area {
+	width: 990px;
+	height: 200px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.nav-1 {
+	width:190px;
+	height:250px;
+	background-image:url(../images/nav-1.png);
+	position:absolute;
+	top:221px;
+	left:21px;
+}
+.nav-1 > div {
+	width:100%;
+	height:auto;
+	position:relative;
+}
+.nav-1 > div > div {
+	width:111px;
+	height:42px;
+	position:absolute;
+	top:199px;
+	left:40px;
+}
+.nav-1 > div > div > a > img {
+	border:0px;
+}
+.nav-2 {
+	width:190px;
+	height:250px;
+	background-image:url(../images/nav-2.png);
+	position:absolute;
+	top:266px;
+	left:211px;
+}
+.nav-2 > div {
+	width:100%;
+	height:auto;
+	position:relative;
+}
+.nav-2 > div > div {
+	width:111px;
+	height:42px;
+	position:absolute;
+	top:199px;
+	left:40px;
+}
+.nav-2 > div > div > a > img {
+	border:0px;
+}
+.nav-3 {
+	width:190px;
+	height:250px;
+	background-image:url(../images/nav-3.png);
+	position:absolute;
+	top:221px;
+	left:401px;
+}
+.nav-3 > div {
+	width:100%;
+	height:auto;
+	position:relative;
+}
+.nav-3 > div > div {
+	width:111px;
+	height:42px;
+	position:absolute;
+	top:199px;
+	left:40px;
+}
+.nav-3 > div > div > a > img {
+	border:0px;
+}
+.nav-4 {
+	width:190px;
+	height:250px;
+	background-image:url(../images/nav-4.png);
+	position:absolute;
+	top:266px;
+	left:591px;
+}
+.nav-4 > div {
+	width:100%;
+	height:auto;
+	position:relative;
+}
+.nav-4 > div > div {
+	width:111px;
+	height:42px;
+	position:absolute;
+	top:199px;
+	left:40px;
+}
+.nav-4 > div > div > a > img {
+	border:0px;
+}
+.nav-5 {
+	width:190px;
+	height:250px;
+	background-image:url(../images/nav-5.png);
+	position:absolute;
+	top:221px;
+	left:781px;
+}
+.nav-5 > div {
+	width:100%;
+	height:auto;
+	position:relative;
+}
+.nav-5 > div > div {
+	width:111px;
+	height:42px;
+	position:absolute;
+	top:199px;
+	left:40px;
+}
+.nav-5 > div > div > a > img {
+	border:0px;
+}

@@ -1,0 +1,114 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微軟正黑體";
+}
+
+
+/************此區參考用插入程式時可刪除*****************/
+body {
+	padding:20px;
+}
+.popupWrap-top {
+	width:548px;
+	height:22px;
+}
+.popupWrap-body {
+	width:546px;
+	height:400px;
+	border-right:1px #aaaaaa solid;
+	border-left:1px #aaaaaa solid;
+}
+.popupWrap-bottom {
+	width:548px;
+	height:19px;
+}
+/********************************************/
+
+
+.popupArea {
+	width: 546px;
+	height: 350px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.title-1 {
+	width: auto;
+	height: 26px;
+	background-color: #339966;
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+	margin-right: 34px;
+	margin-left: 34px;
+	padding-top: 8px;
+	padding-left: 19px;
+}
+.tableArea {
+	width: auto;
+	height: 204px;
+	margin-top: 2px;
+	margin-right: 34px;
+	margin-left: 34px;
+}
+.tableArea table {
+	border-collapse: collapse;
+}
+.tableArea table tr td {
+	height: 50px;
+	border: 1px #339966 solid;
+	font-size: 15px;
+	color: #333;
+	padding-left: 9px;
+}
+.tableArea input {
+	width: 94%;
+	height: 29px;
+	border: 1px #b4b4b4 solid;
+	padding-left: 3px;
+}
+.padFix-1 {
+	padding-left: 10px;
+}
+.widthFix {
+	width: 228px;
+}
+.tableArea .note {
+	width: 100%;
+	font-size: 14px;
+	color: #cc0000;
+	margin-top: 13px;
+}
+.tableArea .note:before {
+	content: "＊";
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+.popupArea hr {
+	border:0;
+	height:0x;
+	border-top:1px #333 dashed;
+	color:#333;	/* IE6 */
+	margin-top:50px;
+	margin-bottom:25px;
+}
+.popupArea .btnArea {
+	width:100%;
+	text-align:center;
+}
+.popupArea .btn {
+	display:inline-block;
+	background-color:#bf4322;
+	border:2px #af1519 solid;
+	border-radius:5px;
+	font-size:16px;
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+	padding:5px 17px;
+	margin:0 auto;
+}
+.popupArea .btn:hover {
+	background-color:#af1519
+}

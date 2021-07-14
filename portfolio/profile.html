@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>艾森作品集</title>
+  <link rel="icon" href="images/favicon/favicon-16x16.png" type="image/png">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/rwd.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+  <div id="mainMenu"></div>
+  <div id="wrapper-index">
+    <div class="container-fluid container-profile">
+      <div class="row">
+        <div class="mainContainer">
+          <section class="hotArea hover-fix profile-area">
+            <div class="col-xs-12">
+              <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-3">
+                  <div class="txtArea span-fix">
+                    <div class="profile js-profile">
+                      <img src="images/profile_ason_2.jpg" />
+                      <!-- <img src="images/ason_gray_2.svg" /> -->
+                    </div>
+                    <!-- <h2>個人簡介</h2> -->
+                    <h3 class="intro">
+                      嗨！我是森貿，資深網頁設計師，專注於網頁視覺設計及前端網頁切版之領域。
+                    <a href="best.html" class="best-works" title="作品精選"><i class="fa fa-link"></i>作品精選</a>
+                      <!-- <a href="data/resume/ason_resume.pdf" download="Ason_Resume" class="download-resume"
+                        title="下載履歷表">RESUME<i class="fa fa-link"></i></a> -->
+                    </h3>
+                    <h2>連絡方式</h2>
+                    <div class="contact">
+                      <ul>
+                        <li><i class="fas fa-phone-square"></i>0918-650-930</li>
+                        <li>
+                          <i class="fab fa-line"></i>
+                          <a href="https://line.me/ti/p/_XGnDnULfQ" target="_blank">ID:WUJIHLK</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-envelope-square"></i>
+                          <a href="mailto:ason0930@gmail.com">ason0930@gmail.com</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <h2>技能專長</h2>
+                    <div class="skill">
+                      <ul>
+                        <li>視覺設計 / 網頁設計 / 前端設計</li>
+                        <li class="hidden-xs slash">/ </li>
+                        <li>UI設計 / 平面設計 / 電腦繪圖</li>
+                      </ul>
+                    </div>
+                    <h2>職務描述</h2>
+                    <div class="job">
+                      <ul>
+                        <li>因應疫情，本人接受以全職身份在家工作遠距上班。</li>
+                        <li>自我管理設計流程及進度，優化產品UI/UX設計品質。</li>
+                        <li>從「視覺設計」到「網頁切版」，可團隊協作或獨立作業。</li>
+                        <li>手動編寫HTML、CSS、JavaScript，快速進行前端網頁切版及微互動設計。</li>
+                        <li>執行RWD網頁設計及瀏覽器相容性測試。</li>
+                        <li>應用jQuery、Bootstrap、Font Awesome等資源加速設計流程。</li>
+                        <!-- <li>支援Wireframe、Mockup、Prototype產出。</li> -->
+                        <li>使用軟體：Photoshop、Illustrator、Visual Studio Code、Adobe XD、Clip Studio Paint。</li>
+                        <li>按排程作業，支援個人專長之設計項目。</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footerId"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+    $(function () {
+
+      // 主選單 開始
+      $("#mainMenu").load("menu.html");
+      // 主選單 結束
+      // 頁尾 開始
+      $("#footerId").load("footer.html");
+      // 頁尾 結束
+
+    });  
+  </script>
+
+  <!-- 回頁頂 開始 -->
+  <script src="js/gotop.js"></script>
+  <!-- 回頁頂 結束 -->
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- index profile animation start -->
+  <!-- <script>
+    TweenMax.from(".js-profile", 1, { ease: Power2.easeOut, x: 0, opacity: 0, scale: 0 });
+
+  </script> -->
+  <!-- index profile animation end -->
+</body>
+
+</html>

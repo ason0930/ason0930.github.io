@@ -1,0 +1,429 @@
+@charset "utf-8";
+* {
+	padding:0;
+	margin:0;
+}
+body {
+	background-image:url(../images/index-bg.gif);
+	background-color:#f2f2f2;
+	background-repeat:repeat-x;
+}
+.block-top-1 {
+	width:100%;
+	height:12px;
+	background-color:#3d3d3d;
+}
+div#wrapper {
+	width:950px;
+	margin:0 auto;
+}
+
+/* 首頁　－－－－－－－－　start */
+
+/* 頁首 */
+div#header {
+	width:100%;
+	height:238px;
+}
+div#header-image {
+	width:100%;
+	height:145px;
+	background-image:url(../images/bg-header-1.jpg);
+	background-repeat:no-repeat;
+}
+div#logo {
+	width:392px;
+	height:80px;
+}
+div#header-txt-1 {
+	width:299px;
+	height:50px;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#333;
+	padding-left:93px;
+}
+div#header-txt-1 a {
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#333;
+	text-decoration:none;
+}
+div#header-txt-1 a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+div#header-txt-2 {
+	width:307px;
+	height:54px;
+	float:right;
+	margin-top:34px;
+	margin-right:219px;
+	background-image:url(../images/slogan-1.gif);
+	background-repeat:no-repeat;
+}
+div#nav-1 {
+	width:100%;
+	height:63px;
+	background-image:url(../images/bg-nav-1.gif);
+	background-repeat:no-repeat;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+.btn-1 {
+	width:133px;
+	height:54px;
+	float:left;
+}
+.btn-2 {
+	width:119px;
+	height:54px;
+	float:left;
+}
+.btn-3 {
+	width:5px;
+	height:54px;
+	background-image:url(../images/header-nav-off_c11.gif);
+	background-repeat:repeat-x;
+	float:left;
+}
+.vline-1 {
+	width:2px;
+	height:54px;
+	background-image:url(../images/header-nav-off_c2.gif);
+	float:left;
+}
+
+/* 本文區 */
+div#mainContainer {
+	clear:both;
+	width:100%;
+}
+/* 廣告輪播 */
+div#adv-1 {
+	width:950px;
+	height:388px;
+}
+/* 滑動選單 */
+div#nav-2 {
+	width:100%;
+	height:205px;
+	background-image:url(../images/bg-nav-2.gif);
+	background-repeat:no-repeat;
+	margin-top:10px;
+}
+div#nav-2 div {
+	float:left;
+}
+.arrow-left-1 {
+	width:47px;
+	height:47px;
+	margin-left:16px;
+	margin-right:9px;
+	margin-top:62px;
+}
+.pic-1 {
+	width:150px;
+	height:176px;
+	margin-top:10px;
+}
+.pic-2 {
+	width:150px;
+	height:176px;
+	margin-left:14px;
+	margin-top:10px;
+}
+.border-1 {
+	width:148px;
+	height:137px;
+	border:1px #f5f5f5 solid;
+}
+.txt-1 {
+	width:148px;
+	height:24px;
+	margin-top:13px;
+}
+.txt-1 a {
+    font-size:12px;
+	color:#9c9d9f;
+	text-decoration:none;
+}
+.txt-1 a:hover {
+	color:#000;
+}
+.arrow-right-1 {
+	width:47px;
+	height:47px;
+	margin-left:9px;
+	margin-top:62px;
+}
+div#main {
+	width:710px;
+	height:480px;
+	float:right;
+	margin-top:20px;
+}
+
+/* 左側選單 */
+div#left {
+	width:230px;
+	height:480px;
+	margin-top:20px;
+	float:left;
+}
+.left-top-1 {
+	width:230px;
+	height:16px;
+	background-image: url(../images/bg-left_c1.gif);
+	background-repeat:no-repeat;
+}
+.left-body-1 {
+	width:230px;
+	height:447px;
+	background-image:url(../images/bg-left_c2.gif);
+	background-repeat:repeat-y;
+}
+.left-bottom-1 {
+	width:230px;
+	height:17px;
+	background-image:url(../images/bg-left_c3.gif);
+	background-repeat:no-repeat;
+}
+
+/* 最新產品 */
+div#new-title-area {
+	width:710px;
+	background-image:url(../images/bg-new-title-1.gif);
+	background-repeat:no-repeat;
+}
+div#new-product-bg {
+	width:710px;
+	height:327px;
+	background-image:url(../images/bg-product-1.gif);
+	background-repeat:no-repeat;
+}
+.product-1 {
+	width:148px;
+	height:243px;
+	margin-top:37px;
+	margin-right:12px;
+	margin-left:40px;
+	float:left;
+}
+.product-2 {
+	width:148px;
+	height:243px;
+	margin-top:37px;
+	margin-right:12px;
+	float:left;
+}
+.product-pic-1 {
+	width:148px;
+	height:185px;
+}
+.product-txt-1 {
+	width:148px;
+	height:20px;
+	text-align:center;
+	margin-top:14px;
+	margin-top:12px;
+	font-size:12px;
+	color:#9c9d9f;
+}
+/*.product-txt-1 a {
+	font-size:12px;
+	color:#9c9d9f;
+	text-decoration:none;
+}
+.product-txt-1 a:hover {
+	color:#000;
+}*/
+.product-btn-1 {
+	width:81px;
+	height:17px;
+	background-image:url(../images/btn-bg-1.gif);
+	background-repeat:no-repeat;
+	text-align:center;
+	padding-top:5px;
+	margin-left:33px
+}
+.product-btn-1 a {
+	font-size:12px;
+	color:#663300;
+	text-decoration:none;
+}
+.product-btn-1 a:hover {
+	color:#fff;
+}
+div#tel {
+	width:710px;
+	height:95px;
+	margin-top:10px;
+	background-image:url(../images/banner-tel-1.jpg);
+	background-repeat:no-repeat;
+}
+/* 頁尾 */
+div#footer {
+	clear:both;
+	width:100%;
+	height:92px;
+	padding-top:36px;	
+}
+div#copyright {
+	width:300px;
+	height:20px;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#333;
+	text-align:right;
+	float:right;
+}
+div#footer-nav {
+	width:350px;
+	height:34px;
+	font-size:12px;
+	color:#696767;
+	float:left
+}
+div#footer-nav a {
+	color:#696767;
+	text-decoration:none;
+}
+div#footer-nav a:hover {
+	color:#000;
+}
+div#footer-txt {
+	clear:both;
+	width:100%;
+	height:30px;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#333;
+}
+div#footer-txt a {
+	color:#333;
+	text-decoration:none;	
+}
+div#footer-txt a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+
+/* 首頁　－－－－－－－－　end */
+
+/* 產品頁　－－－－－－－－　start */
+
+div#main-2 {
+	width:710px;
+	float:right;
+	margin-top:20px;
+}
+div#product-bg-1 {
+	clear:both;
+	width:710px;
+	background-image:url(../images/bg-product-2-03.jpg);
+	background-repeat:repeat-y;
+}
+div#product-bg-2 {
+	clear:both;
+	width:687px;
+	min-height:217px;	
+	background-image:url(../images/bg-product-2-01.jpg);
+	background-repeat:no-repeat;
+	padding-top:23px;
+	padding-left:23px;
+}
+.intro-pic-1 {
+	width:190px;
+	height:164px;
+	float:left;
+	margin-right:39px;
+	margin-bottom:30px;
+}
+.intro-pic-2 {
+	width:168px;
+	height:128px;
+	padding:8px 10px;
+	border:1px #ccc solid;
+	text-align:center;
+}
+.intro-txt-1 {
+	width:100%;
+	height:12px;
+	font-size:12px;
+	margin-top:7px;
+	text-align:center;
+}
+.intro-txt-1 a {
+	color:#666;
+	text-decoration:none;
+}
+.intro-txt-1 a:hover {
+	color:#000;
+}
+div#product-bg-3 {
+	clear:both;
+	width:710px;
+	height:17px;
+	background-image:url(../images/bg-product-2-02.jpg);
+	background-repeat:no-repeat;
+}
+
+/* 各式高精度軸承生產製造 */
+.kind-list-1 {
+	clear:both;
+	width:664px;
+	height:18px;
+	border-bottom:1px #ccc solid;
+}
+.kind-list-2 {
+	width:664px;
+	height:18px;
+	border-bottom:1px #ccc solid;
+    float:left;
+	margin-top:38px;
+}
+.kind-title-1 {
+	width:600px;
+	height:15px;
+	font-size:15px;
+	font-weight:bold;
+	color:#666;
+	float:left;
+}
+.arrow-top-1 {
+	width:21px;
+	height:6px;	
+	float:right;
+	margin-top:9px;
+}
+.kind-pic-1 {
+	width:168px;
+	height:128px;
+	padding:8px 10px;
+	margin-right:39px;
+	border:1px #ccc solid;
+	margin-top:10px;
+	float:left;
+}
+div#kind-bg-2 {
+	clear:both;
+	width:687px;
+	min-height:347px;	
+	background-image:url(../images/bg-kind-1.jpg);
+	background-repeat:no-repeat;
+	padding-top:23px;
+	padding-left:23px;
+}
+div#kind-bg-1 {
+	clear:both;
+	width:710px;
+	background-color:#e8e9e9;
+}
+div#kind-bg-3 {
+	clear:both;
+	width:710px;
+	height:17px;
+	background-image:url(../images/bg-kind-3.jpg);
+	background-repeat:no-repeat;
+}

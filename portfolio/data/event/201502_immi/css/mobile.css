@@ -1,0 +1,914 @@
+/*通用設定*/
+@charset "utf-8";
+* {
+	margin:0;
+	padding:0;
+	font-family:"微軟正黑體";
+}
+a {
+	text-decoration:none;
+}
+img {
+	width:100%;
+	height:auto;
+}
+.clearfix {
+	float:none;
+}
+.last {
+	margin-right:0;
+}
+.last-2 {
+	padding-bottom:40px;
+}
+.last-3 {
+	padding-bottom:20px;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.header {
+	width:100%;
+	height:50px;
+	background-color:#2170b5;
+	position:relative;
+}
+.header #logo {
+	width:100px;
+	height:26px;
+	background:url(../images/logo.png) no-repeat;
+	background-size:100%;
+	position:absolute;
+	top:13px;
+	left:10px;
+}
+.header .lang {
+	width:60px;
+	height:auto;
+	background-color:#3186d7;
+	border:2px #68b7f9 solid;
+	border-radius:3px;
+	font-size:16px;
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:4px;
+	position:absolute;
+	top:7px;
+	right:136px;
+}
+.header .board {
+	width:60px;
+	height:auto;
+	background-color:#3186d7;
+	border:2px #68b7f9 solid;
+	border-radius:3px;
+	font-size:16px;
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:4px;
+	position:absolute;
+	top:7px;
+	right:71px;
+}
+.header .help {
+	width:60px;
+	height:auto;
+	background-color:#d44137;
+	border:2px #f57268 solid;
+	border-radius:3px;
+	font-size:16px;
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:4px;
+	position:absolute;
+	top:7px;
+	right:5px;
+}
+.space-1 {
+	width:100%;
+	height:15px;
+	background-color:#e7eef8;
+}
+.mainContent {
+	width:100%;
+	height:auto;
+}
+.borderFix {
+	border-right:0;
+}
+.pushArea {
+	width:100%;
+	height:auto;
+	margin-bottom:1px;
+	float:left;
+}
+.marginFix {
+	margin-bottom:0;
+}
+.marginFix-2 {
+	margin-bottom:15px;
+}
+.spaceFix-1 {
+	height:200px;
+	float:left;
+}
+
+/*首頁*/
+.posFix {
+		height:10px;
+}
+.btnArea {
+	width:100%;
+	height:auto;
+}
+.btnArea a {
+	width:49.5%;
+	height:auto;
+	border-right:1px #999 dashed;
+	border-bottom:1px #999 dashed;
+	font-size:20px;
+	color:#000;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	padding-top:15px;
+	padding-bottom:15px;
+	float:left;
+}
+.btnArea a:hover {
+	text-decoration:none;
+}
+.pushArea .pushTitle {
+	width:100%;
+	height:40px;
+	background-color:#5096d4;
+	margin-top:5px;
+	float:left;
+	text-align:center;
+}
+.pushArea .pushTitle span {
+	display:inline-block;
+	width:auto;
+	background:url(../images/icon_push.png) no-repeat 0 3px;
+	background-size:20px 18px;
+	font-size:18px;
+	color:#fff;
+	font-weight:bold;
+	margin-top:10px;
+	padding-left:22px;
+}
+.pushArea .pushItem {
+	width:100%;
+	height:auto;
+	margin-bottom:6px;
+	float:left;
+}
+.pushArea .pushItem .pushPic {
+	width:100%;
+	height:auto;
+	position:relative;
+}
+.pushArea .pushItem .pushPic .pushTxt {
+	overflow:hidden;
+	width:98%;
+	height:30px;
+	background-color:rgba(0,0,0,0.5);
+	font-size:1.2em;
+	color:#fff;
+	padding:5px 1% 6px;
+	position:absolute;
+	bottom:5px;
+	left:0;
+	z-index:1;
+}
+
+/*吃在台灣+玩在寶島*/
+.pushArea .pushTitle-2 {
+	width:100%;
+	height:40px;
+	background-color:#6db1e0;
+	margin-top:5px;
+	float:left;
+}
+.pushArea .pushTitle-2 > span {
+	display:inline-block;
+	width:auto;
+	height:30px;
+	background-color:#2f90c7;
+	font-size:18px;
+	color:#fff;
+	font-weight:bold;
+	padding-top:10px;
+	padding-right:20px;
+	padding-left:15px;
+	float:left;
+}
+.pushArea .pushItem .pushPic .pushTxt-2 {
+	width:98%;
+	height:20px;
+	background-color:rgba(0,0,0,0.5);
+	font-size:1.2em;
+	color:#fff;
+	padding:5px 1% 6px;
+	position:absolute;
+	bottom:5px;
+	left:0;
+	z-index:1;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.btnArea-2 {
+	width:100%;
+	height:auto;
+	background-color:#fff;
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:2;
+}
+.btnEat {
+	width:49.5%;
+	height:auto;
+	background:url(../images/icon_arrow_1.png) no-repeat 5px 5px;
+	border-top:1px #999 dashed;
+	border-right:1px #999 dashed;
+	border-bottom:1px #999 dashed;
+	font-size:1.5em;
+	color:#000;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	float:left;
+}
+.btnPlay {
+	width:49.5%;
+	height:auto;
+	background:url(../images/icon_arrow_1.png) no-repeat 5px 5px;
+	border-top:1px #999 dashed;
+	border-right:1px #999 dashed;
+	border-bottom:1px #999 dashed;
+	font-size:1.5em;
+	color:#000;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	float:left;
+}
+.btnDown-1 {
+	background:url(../images/icon_arrow_2.png) no-repeat 5px 5px;
+	background-color:#0066CC;
+	color:#fff;
+}
+#eatArea {
+	display: none;
+	width: 49.5%;
+	height: auto;
+	background-color: #fff;
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	z-index: 3;
+}
+#eatArea a {
+	width:100%;
+	height:auto;
+	background:none;
+	border-right:1px #999 dashed;
+	border-bottom:1px #999 dashed;
+	font-size:1.2em;
+	color:#000;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	float:left;
+}
+#playArea {
+	display: none;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	position: absolute;
+	bottom: 50px;
+	right: 0;
+	z-index: 3;
+}
+#playArea a {
+	width:49.5%;
+	height:auto;
+	background:none;
+	border-right:1px #999 dashed;
+	border-bottom:1px #999 dashed;
+/*	border-left:1px #999 dashed;*/
+	font-size:1.2em;
+	color:#000;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	float:left;
+}
+
+/*吃在台灣+玩在寶島-詳情頁*/
+.pushArea h1 {
+	width:auto;
+	font-size:1.5em;
+	color:#333;
+	padding:20px;
+	float:left;
+}
+.pushArea h2 {
+	width:auto;
+	border-bottom:1px #ccc solid;
+	font-size:1.1em;
+	color:#333;
+	line-height:1.8em;
+	padding:15px 20px;
+	float:left;
+}
+
+
+/*焦點新聞及活動訊息*/
+.pushArea .pushItem .pushPic .newsTitle {
+	width:96%;
+	height:20px;
+	background-color:rgba(0,0,0,0.5);
+	font-size:1.2em;
+	color:#fff;
+	font-weight:bold;
+	padding:4px 2% 6px;
+	position:absolute;
+	bottom:5px;
+	left:0;
+	z-index:1;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.newsArea {
+	width:100%;
+	height:50px;
+	float:left;
+	position:relative;
+}
+.newsArea .title {
+	overflow:hidden;
+	display:table-cell;
+	vertical-align:middle;
+	width:70%;
+	height:40px;
+	font-size:1em;
+	color:#000;
+	text-decoration:none;
+	position:absolute;
+	top:15px;
+	left:15px;
+}
+.newsArea-2 {
+	width:100%;
+	height:55px;
+	border-top:1px #ccc solid;
+	overflow:hidden;
+	margin-bottom:10px;
+	float:left;
+	position:relative;
+}
+.newsArea-2 .title-2 {
+    width:auto;
+	height:40px;
+	font-size:1em;
+	color:#000;
+	text-decoration:none;
+	text-align:left;
+	display:table-cell;
+	vertical-align: middle;
+	padding-top:15px;
+	padding-right:80px;
+	padding-left:15px;
+	float:left;
+}
+.newsArea-2 .pic {
+	width:50px;
+	height:50px;
+	background-color:#666;
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+
+/*焦點新聞及活動訊息--詳情頁*/
+.newsItem h1 {
+	width:94%;
+	font-size:1.5em;
+	color:#333;
+	padding:10px 3% 2px;
+	float:left;
+}
+.newsItem p {
+	width:94%;
+	font-size:1.1em;
+	color:#333;
+	line-height:1.8em;
+	padding:15px 3%;
+	float:left;
+}
+.newsItem .date {
+	width:97%;
+	height:auto;
+	font-size:0.9em;
+	margin-bottom:10px;
+	padding-left:3%;
+	float:left;
+}
+.shareArea {
+	width:130px;
+	height:24px;
+	float:right;
+}
+.shareArea .shareBtn {
+	width:auto;
+	height:20px;
+}
+.shareBtn a {
+	display:inline-block;
+	padding:5px 10px;
+	font-size:1.1em;
+	color:#06C;
+	text-decoration:none;
+	text-align:center;
+}
+.readArea {
+	width:94%;
+	height:auto;
+	border-bottom:5px #999 solid;
+	margin:30px 3% 0;
+	float:left;
+	position:relative;
+}
+.readArea .title {
+	width:auto;
+	height:24px;
+	background-color:#fff;
+	font-size:1.2em;
+	color:#000;
+	padding-right:15px;
+	position:absolute;
+	bottom:-5px;
+	left:0;
+}
+.readList ul {
+	width:94%;
+	list-style:outside;
+	list-style-type:none;
+	padding-right:3%;
+	padding-left:3%;
+	padding-bottom:20px;
+	float:left;
+}
+.readList ul li {
+	width:100%;
+	font-size:0.9em;
+	color:#06C;
+	margin-top:10px;
+	position:relative;
+}
+.readList ul li a {
+	display:inline-block;
+	width:50%;
+	white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+	text-decoration:none;
+	font-size:1.1em;
+	color:#06C;
+}
+.readList ul li span {
+	margin-right:5px;
+}
+.readList ul li .date {
+	width:100px;
+	height:18px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1rem;
+	color:#999;
+	position:absolute;
+	top:0;
+	right:0;
+
+}
+
+/*用語*/
+.wordBtn {
+	list-style:none;
+	width:100%;
+	height:auto;
+	text-align:center;
+	padding-bottom:15px;
+}
+.wordBtn a {
+	display:inline-block;
+	width:90%;
+	background-color:#006699;
+	background: -webkit-linear-gradient(#598ac5 0%, #496cae 50%, #355ba4 51%, #284390 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#598ac5 0%, #496cae 50%, #355ba4 51%, #284390 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#598ac5 0%, #496cae 50%, #355ba4 51%, #284390 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#598ac5 0%, #496cae 50%, #355ba4 51%, #284390 100%); /* Standard syntax (must be last) */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#598ac5',EndColorStr='#284390');
+	border-radius:10px;
+	font-size:30px;
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+	margin-top:15px;
+	padding-top:23px;
+	padding-bottom:20px;
+}
+.wordBtn-list {
+	list-style:none;
+	width:100%;
+	height:auto;
+	text-align:center;
+	padding-bottom:15px;
+}
+.wordBtn-list a {
+	display:inline-block;
+	width:94%;
+	border-radius:5px;
+	font-size:30px;
+	color:#666;
+	font-weight:bold;
+	text-decoration:none;
+	margin-top:15px;
+	padding-top:23px;
+	padding-bottom:20px;
+}
+.listBg {
+	background-color:#daf7f3;
+}
+.postBtn .pre, .postBtn .next {
+	width:100px;
+	background: -webkit-linear-gradient(#e3e2de, #c5c5c3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#e3e2de, #c5c5c3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#e3e2de, #c5c5c3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#e3e2de, #c5c5c3); /* Standard syntax (must be last) */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e3e2de',EndColorStr='#c5c5c3');
+	font-size:1em;
+	color:#000;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.postBtn .pre {
+	position:fixed;
+	bottom:0;
+	left:0;
+}
+.postBtn .next {
+	position:fixed;
+	right:0;
+	bottom:0;
+}
+.wordArea .term {
+	width:50%;
+	text-align:center;
+	float:left;
+}
+.wordArea .sm {
+	font-size:1.5em;
+	color:#363f60;
+	font-weight:bold;
+	padding-top:20px;
+}
+.wordArea .lg {
+	font-size:3em;
+	color:#333;
+	font-weight:bold;
+}
+.wordArea .wordTxt {
+	font-size:1.2rem;
+	text-align:left;
+	margin:10px;
+}
+
+
+/*自助行申請資訊*/
+.travelArea .pushTitle-2 {
+	width:100%;
+	height:40px;
+	background-color:#6db1e0;
+	margin-top:5px;
+	float:left;
+}
+.travelArea .pushTitle-2 > span {
+	display:inline-block;
+	width:auto;
+	height:30px;
+	background-color:#2f90c7;
+	font-size:18px;
+	color:#fff;
+	font-weight:bold;
+	padding-top:10px;
+	padding-right:20px;
+	padding-left:15px;
+}
+.travelArea .pushItem {
+	width:100%;
+	height:auto;
+	margin-bottom:6px;
+	float:left;
+}
+.travelArea .pushItem .pushPic {
+	width:100%;
+	height:auto;
+	position:relative;
+}
+.travelArea .pushItem .pushPic .pushTxt {
+	width:98%;
+	height:20px;
+	background-color:rgba(0,0,0,0.5);
+	font-size:1.2em;
+	color:#fff;
+	padding:4px 1% 6px;
+	position:absolute;
+	bottom:5px;
+	left:0;
+	z-index:1;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+
+/*留言板*/
+.boardNum {
+	width:100%;
+	height:auto;
+	border-bottom:1px #999 solid;
+	margin-bottom:5px;
+	padding-bottom:10px;
+	text-align:right;
+}
+.boardNum .txt {
+	font-size:0.95em;
+}
+.boardNum .num {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#cc0000;
+}
+.boardNum select {
+	margin-right:10px;
+	margin-left:10px;
+}
+.boardArea {
+	width:86%;
+	font-size:1em;
+	margin:0 7%;
+	float:left;
+}
+.boardArea > div {
+	width:100%;
+	margin-top:20px;
+}
+.boardArea div span {
+	display:inline-block;
+	width:16px;
+	height:16px;
+	margin-right:5px;
+}
+.boardArea div input {
+	width:100%;
+	height:24px;
+	margin-left:5px;
+}
+.boardArea div textarea {
+	width:100%;
+	height:150px;
+	margin-left:5px;
+}
+.boradBtn {
+	text-align:center;
+}
+.boradBtn a {
+	display:inline-block;
+	background-color:#005cb1;
+	border-radius:5px;
+	font-size:1.2em;
+	color:#fff;
+	text-decoration:none;
+	margin-right:5px;
+	margin-bottom:20px;
+	margin-left:5px;
+	padding:5px 10px;
+}
+
+/*留言板內頁*/
+.pushTitle-2 .boradBtn-2 {
+	display:inline-block;
+	border-radius:5px;
+	font-size:1em;
+	color:#fff;
+	text-decoration:none;
+	padding:5px 10px;
+	float:right;	
+}
+.pushTitle-2 a {
+	float:right;
+	display:inline-block;
+	background-color:#005cb1;
+	border-radius:5px;
+	font-size:1.2em;
+	color:#fff;
+	text-decoration:none;
+	padding:5px 10px;
+	margin-top:3px;
+	margin-right:2px;
+}
+.boardList ul {
+	width:100%;
+	list-style:none;
+	border-bottom:1px #999 solid;
+	margin-bottom:20px;
+	padding-bottom:10px;
+	float:left;
+}
+.boardList ul li {
+	width:auto;
+	margin-top:5px;
+	padding:10px;
+}
+.boardList ul li p {
+	font-size:１em;
+	margin-bottom:5px;
+}
+.bg-blue {
+	background-color:#dbf1ff;
+}
+.bg-white {
+	background-color:#fff;
+}
+.bg-gray {
+	background-color:#e8e8e8;
+}
+.txtLg {
+	font-size:1em;
+	font-weight:bold;
+}
+.txtSm {
+	width:auto;
+	font-size:0.8em;
+	text-align:right;
+	padding-top:2px;
+	float:right;
+}
+.reply {
+	font-size:0.95em;
+	text-align:right;
+}
+.reply a {
+	color:#000;
+}
+	
+.pushTitle-2 > a > span {
+	display:inline-block;
+	width:16px;
+	height:16px;
+	margin-right:5px;
+}
+
+
+/*天氣*/
+
+
+/*救援*/
+.note {
+	width:100%;
+	float:left;
+}
+.note div {
+	width:auto;
+	padding:20px;
+	letter-spacing:2px;
+}
+
+/*回應*/
+.replyArea {
+	width:auto;
+	height:auto;
+	margin:0 10px 20px;
+	padding-top:20px;
+	float:left;
+}
+.replyArea .replyName {
+	width:100%;
+	margin-bottom:10px;
+}
+.replyName input {
+	width:80%;
+	height:30px;
+}
+.replyArea textarea {
+	width:100%;
+	height:200px;
+	margin-bottom:10px;
+}
+.replyArea .replyRule {
+	width:100%;
+	font-size:0.9em;
+	text-align:center;
+	margin-bottom:10px;
+}
+.replyRule a {
+	font-size:1em;
+	color:#06c;
+}
+.replyRule a:hover {
+	text-decoration:none;
+}	
+.replyArea .btnReply {
+	width:100%;
+	text-align:center;
+	margin-bottom:20px;
+}
+.replyArea .btnReply a {
+	display:inline-block;
+	background-color:#006699;
+	background: -webkit-linear-gradient(#598ac5 0%, #496cae 50%, #355ba4 51%, #284390 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#598ac5 0%, #496cae 50%, #355ba4 51%, #284390 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#598ac5 0%, #496cae 50%, #355ba4 51%, #284390 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#598ac5 0%, #496cae 50%, #355ba4 51%, #284390 100%); /* Standard syntax (must be last) */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#598ac5',EndColorStr='#284390');
+	border-radius:10px;
+	font-size:20px;
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+	padding:5px 30px;
+}
+.replyArea .replyList {
+	width:auto;
+	padding:20px 10px 5px 10px;
+	background-color:#d3ecf5;
+	margin-bottom:20px;
+}
+.replyList > ul {
+	list-style:none;
+	font-size:0.9em;
+	margin-bottom:15px;
+}
+.replyList > ul .replyTxt {
+	font-size:1em;
+}
+.replyList > ul > li > ul {
+	list-style:none;
+	font-size:1em;
+	color:#000;
+	padding:10px;
+	background-color:#fff;
+}
+.replyList > ul > li .replyName-2 {
+	font-size:1em;
+	color:#0071bc;
+	margin-right:5px;
+	margin-left:5px;
+}
+.replyList ul .replyTime {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:0.9em;
+	color:#0071bc;
+	margin-right:5px;
+	margin-left:5px;
+}
+.replyList ul li ul li {
+	font-size:1em;
+}
+
+/*media query*/
+/*@media screen and (min-width: 480px) {
+	.boardArea div input {
+		width:75%;
+	}
+	.boardArea div textarea {
+		width:75%;
+	}	
+}*/

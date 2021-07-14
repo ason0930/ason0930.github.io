@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+.w {
+	font-size: 13px;
+	line-height: 20px;
+	color: #000000;
+}
+a:link {
+	color: #4a6cb1;
+}
+a:visited {
+	color: #4a6cb1;
+}
+a:hover {
+	color: #4a6cb1;
+}
+a:active {
+	color: #4a6cb1;
+}
+#apDiv2 {
+	position:absolute;
+	left:449px;
+	top:13px;
+	width:105px;
+	height:25px;
+	z-index:1;
+}
+.bw {
+	font-size: 15px;
+	line-height: 23px;
+	color: #3A3A3A;
+}
+.o {
+	font-size: 15px;
+	line-height: 23px;
+	color: #FF6600;
+}
+.bws {
+	font-size: 15px;
+	line-height: 23px;
+	color: #3A3A3A;
+}
+.style1 {font-size: 13px; 
+         line-height: 20px;  
+		 color: #000000; 
+		 font-weight: bold; 
+}
+.abk {
+	background-attachment: scroll;
+	background-image: url(images/3_03.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.qbk {
+	background-attachment: scroll;
+	background-image: url(images/q_1.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.e a:link {color: #FF6600;}
+.e a:hoer{color: #4a6cb1;}

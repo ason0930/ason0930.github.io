@@ -1,0 +1,2 @@
+﻿<div style="position:relative;z-index:100"><div style="position:absolute; left:1200px; top:70px">
+  <iframe src="/12SP/app_baanner/in.asp" marginwidth="0" marginheight="0" scrolling="no" border="0" frameborder="0" width="180" height="800"></iframe></div></div>

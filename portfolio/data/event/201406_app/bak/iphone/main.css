@@ -1,0 +1,24 @@
+#container {
+	MARGIN: 0px auto; WIDTH: 1000px
+}
+#album {
+	POSITION: relative; WIDTH: 1000px; HEIGHT: 333px; OVERFLOW: hidden;
+}
+.album {
+	POSITION: relative; WIDTH: 1000px; HEIGHT: 333px; OVERFLOW: hidden;
+}
+#paging {
+	POSITION: absolute; WIDTH: 1000px; HEIGHT: 333px; TOP: 0px; LEFT: 0px
+}
+.paging {
+	POSITION: absolute; WIDTH: 1000px; HEIGHT: 333px; TOP: 0px; LEFT: 0px
+}
+#paging DIV.page {
+	TEXT-ALIGN: center; DISPLAY: none; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 50% 50%; FLOAT: left;
+}
+.paging DIV {
+	TEXT-ALIGN: center; DISPLAY: none; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 50% 50%; FLOAT: left;cursor:pointer
+}
+.paging DIV.p1 {
+	WIDTH: 1000px; HEIGHT: 333px
+}

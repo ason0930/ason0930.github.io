@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% 細明體, 新細明體;
+	background: #666666;
+	margin: 0; /* 比較好的做法是將 Body 元素的邊界與欄位間隔調整為零，以處理不同的瀏覽器預設值 */
+	padding: 0;
+	text-align: center; /* 這樣會讓容器在 IE 5* 瀏覽器內置中對齊。然後，文字會在 #container 選取器中設定為靠左對齊預設值 */
+	color: #000000;
+}
+.thrColAbsHdr #container { 
+	position: relative; /* 新增 position: relative 可讓您決定兩個邊列相對於這個容器的位置 */
+	width: 780px;  /* 使用比完整 800px 少 20px 的寬度會允許使用瀏覽器邊框並且避免水平捲軸出現 */
+	background: #FFFFFF;
+	margin: 0 auto; /* 自動邊界 (搭配寬度) 會讓頁面置中對齊 */
+	border: 1px solid #000000;
+	text-align: left; /* 這樣做會覆寫 Body 元素上的 text-align: center。 */
+} 
+
+/* 含有標題和頁尾之絕對定位邊列的提示：
+1. 您必須指定絕對定位 (AP) 元素的頂端和側邊值 (右邊或左邊)。(因此，如果沒有指定頂端值，AP 元素將會按照頁面的來源順序，直接從最後一個項目之後開始。這表示，如果邊列是文件來源順序中 #container 的第一個元素，即使沒有指定頂端值，它們也會顯示在 #container 的頂端。不過，如果它們的來源順序之後由於任何原因而移動，就需要具有頂端值，才能顯示在所需的位置。
+2. 絕對定位 (AP) 元素會從文件的流向中移出。這表示，佔據頁面上的適當空間後，周圍的元素不知道它們的存在而且無法進行處理。因此，只有當您確定中間的 #mainContent Div 一定會包含大部分內容時，才應該將 AP Div 當做側邊欄使用。如果任一個邊列即將包含更多內容，該邊列就會超過父 Div 的底部 (在此情況下，頁尾也一樣)，而且邊列似乎不會包含在其中。
+3. 如果符合上述需求，絕對定位邊列就可以讓您輕鬆地控制文件的來源順序。
+4. 如果來源順序已變更，頂端值就應該要等於標題的高度，因為這樣會讓欄的外觀符合標題。
+*/
+.thrColAbsHdr #header { 
+	height: 60px; /* 如果您要變更欄的來源順序，可能會想要在標題上使用高度，以便將可預期的頂端值指定給欄 */
+	background: #DDDDDD; 
+	padding: 0 10px 0 20px;  /* 這個欄位間隔符合下面顯示的 Div 中，元素的靠左對齊。如果在 #header 中使用影像而非文字，您可能會想要移除欄位間隔。 */
+} 
+.thrColAbsHdr #header h1 {
+	margin: 0; /* 將 #header Div 中最後一個元素的邊界調整為零可避免邊界收合 (Div 之間出現的空間，無法解釋)。如果 Div 的周圍具有邊框，這就不是必要動作，因為該項設定也會避免邊界收合 */
+	padding: 10px 0; /* 使用欄位間隔而非邊界便可讓元素遠離 Div 的邊緣 */
+}
+.thrColAbsHdr #sidebar1 {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 150px; /* 在符合標準的瀏覽器或 Internet Explorer 的標準模式中，這個 Div 的實際寬度 (除了寬度以外) 將會包含欄位間隔和邊框 */
+	background: #EBEBEB; /* 背景顏色將會針對欄的內容長度而顯示，但僅止於此 */
+	padding: 15px 10px 15px 20px; /* 欄位間隔會讓 Div 的內容遠離邊緣 */
+}
+.thrColAbsHdr #sidebar2 {
+	position: absolute;
+	top: 60px;
+	right: 0;
+	width: 160px; /* 在符合標準的瀏覽器或 Internet Explorer 的標準模式中，這個 Div 的實際寬度 (除了寬度以外) 將會包含欄位間隔和邊框 */
+	background: #EBEBEB; /* 背景顏色將會針對欄的內容長度而顯示，但僅止於此 */
+	padding: 15px 10px 15px 20px; /* 欄位間隔會讓 Div 的內容遠離邊緣 */
+}
+.thrColAbsHdr #mainContent { 
+	margin: 0 200px; /* 這個 Div 元素的右和左邊界會在頁面的側邊建立兩個外部欄。不論邊列 Div 包含多少內容，欄空間將維持不變。 */
+	padding: 0 10px; /* 請記住，欄位間隔就是 Div 方塊內部的空間，而邊界就是 Div 方塊外部的空間 */
+}
+.thrColAbsHdr #footer { 
+	padding: 0 10px 0 20px; /* 這個欄位間隔符合上面顯示的 Div 中，元素的靠左對齊。 */
+	background:#DDDDDD;
+} 
+.thrColAbsHdr #footer p {
+	margin: 0; /* 將頁尾中第一個元素的邊界調整為零可避免邊界收合的可能性 (Div 之間出現的空間) */
+	padding: 10px 0; /* 這個元素的欄位間隔將會建立空間，就如同邊界一樣，但是沒有邊界收合的問題 */
+}
+.fltrt { /* 這個類別可用來讓頁面右邊的元素浮動。浮動元素必須位於頁面上必須相鄰的元素前面。 */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* 這個類別可用來讓頁面左邊的元素浮動 */
+	float: left;
+	margin-right: 8px;
+}
+--> 
+</style><!--[if IE 5]>
+<style type="text/css"> 
+/* 在這個條件註解中，放置 IE 5* 的 CSS 方塊模型修正 */
+.thrColAbsHdr #sidebar1 { width: 180px; }
+.thrColAbsHdr #sidebar2 { width: 190px; }
+</style>
+<![endif]--></head>
+
+<body class="thrColAbsHdr">
+<a href="http://www.etholiday.com"><img src="index_etholiday_2008.jpg" width="900" height="1322" border="0" /></a>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@charset "utf-8";
+.loginTitle{color:#003399; text-align:center; font-size:15px; font-weight:bold;}
+.percentTitle{color:#2b6500;background:url(../images/fit_pBG.jpg) left top no-repeat;width:119px;height:25px;margin-right:76px;text-align:center;font-family:Arial, Helvetica, sans-serif;}
+.percentContent{text-align:left;margin: 5px 0px;}
+.line{background:url(../images/fit_line.gif) center 50% no-repeat;}
+.idpsdStyle{border:1px solid #ccc;	width:80px;	height:20px;line-height:20px;margin:4px 0px;font-family:Arial, Helvetica, sans-serif;font-size:12px;}
+a.red:link{ font-size:12px; color:red;}
+a.fontSize15:link{font-size:15px; text-decoration:underline;}
+.styleBG{color:#cb3500; background:url(../images/fit_styleBG.jpg) left top no-repeat;width:93px; height:25px;text-align:center; font-weight:bold; font-size:15px;}
+.loginItem{color:#2b6500;}
+.userP1{background:url(../images/fit_userP1.jpg) left top no-repeat;width:90px;	height:62px;}
+.userP1 div{color:white;font-size:22px;	font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif;	height:38px;line-height:38px;}
+.userP1 span{color:white;font-size:12px; font-weight:normal;}
+.userP1 p{color:#0072BC; font-size:12px; text-align:center; height:24px; line-height:24px;}
+.userP2{background:url(../images/fit_userP2.jpg) left top no-repeat;width:90px;	height:62px;}
+.userP2 div{color:white;font-size:24px; font-weight:bold; font-family:Verdana, Arial, Helvetica, sans-serif; height:38px; line-height:38px;}
+.userP2 span{color:white;font-size:12px; font-weight:normal;}
+.userP2 p{color:#0072BC; font-size:12px; text-align:center; height:24px; line-height:24px;}
+.otherP{background:url(../images/fit_otherP.jpg) left top no-repeat;width:70px;	height:62px;}
+.otherP div{color:white;font-size:14px;	font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif;	height:30px; line-height:30px;padding-top:8px;}
+.otherP span{color:white;font-size:12px; font-weight:normal;}
+.otherP p{color:#0072BC; font-size:12px; text-align:center; height:24px; line-height:24px;}
+.fontSize12{font-size:12px;	color:#525252;}
+.fontBold{ font-weight:bold; }
+.fontRed{color:red; font-family:Arial, Helvetica, sans-serif;}
+.fontBlack{color:black;}
+.fontSize15{ font-size:15px;}
+

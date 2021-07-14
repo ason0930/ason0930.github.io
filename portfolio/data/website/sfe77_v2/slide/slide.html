@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>slide</title>
+<script src="js/jquery.js"></script>
+<script src="js/slide.js"></script>
+<script>
+	$(function(){
+		$('#slides').slides({
+			preload: true,
+			preloadImage: 'images/preload.gif',
+			play: 3000,
+			pause: 3000,
+			hoverPause: true
+		});
+	});
+</script>
+<style type="text/css">
+/*通用設定*/
+@charset "utf-8";
+* {
+	padding:0px;
+	margin:0px;
+}
+ul,li { 
+	list-style:none;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.slide-1 {
+	width:716px;
+	height:350px;
+	position:relative;
+}
+.slide-1 img {
+	width:716px;
+	height:350px;
+}
+.arrow-left {
+	width:29px;
+	height:34px;
+	position:absolute;
+	left:10px;
+	top:160px;	
+}
+.arrow-left img {
+	width:29px;
+	height:34px;
+}
+.arrow-right {
+	width:29px;
+	height:34px;
+	position:absolute;
+	right:10px;
+	top:160px;	
+}
+.arrow-right img {
+	width:29px;
+	height:34px;
+}
+.btn-all {
+	width:auto;
+	height:20px;
+	left:230px;
+	bottom:15px;
+	position:absolute;
+}
+.btn-all ul li{
+	width:20px;
+	height:20px;
+	margin:0 3px;
+	float:left;
+}
+.btn-all img {
+	width:20px;
+	height:20px;
+}
+</style>
+</head>
+
+<body>
+<div class="slide-1">
+	<img src="images/slide-1.jpg" />
+	<div class="arrow-left"><img src="images/arrow-left.png"/></div>
+  <div class="arrow-right"><img src="images/arrow-right.png"/></div>
+    <div class="btn-all">
+        <ul>
+        	<li><img src="images/btn-on.png" width="20" height="20" /></li>
+            <li><img src="images/btn-off.png" width="20" height="20" /></li>
+            <li><img src="images/btn-off.png" width="20" height="20" /></li>
+            <li><img src="images/btn-off.png" width="20" height="20" /></li>
+            <li><img src="images/btn-off.png" width="20" height="20" /></li>
+            <li><img src="images/btn-off.png" width="20" height="20" /></li>
+            <li><img src="images/btn-off.png" width="20" height="20" /></li>
+            <li><img src="images/btn-off.png" width="20" height="20" /></li>
+            <li><img src="images/btn-off.png" width="20" height="20" /></li>
+            <li><img src="images/btn-off.png" width="20" height="20" /></li>
+            <li><img src="images/btn-off.png" width="20" height="20" /></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

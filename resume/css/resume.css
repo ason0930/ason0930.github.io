@@ -312,18 +312,21 @@ header {
     min-height: 240px;
     max-height: 240px;
   }
+  .contact i {
+    font-size: 21px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-  .my-btn {
-    bottom: 100px;
-    right: 10px;
-  }
   .copyright {
     font-size: 11px;
   }
   .copyright i {
     font-size: 10px;
+  }
+  .my-btn {
+    bottom: 100px;
+    right: 10px;
   }
 }
 
@@ -368,9 +371,6 @@ header {
   }
   .contact ul li {
     font-size: 18px;
-  }
-  .contact i {
-    font-size: 21px;
   }
   .job ul,
   .experience ul {

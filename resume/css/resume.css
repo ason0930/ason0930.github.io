@@ -1,5 +1,8 @@
 /* 20210719 Ason */
 /* common */
+* {
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -64,7 +67,7 @@ header {
 }
 .jumbotron {
   background-color: transparent;
-  padding: 30px 0;
+  padding: 30px 0 0;
 }
 .profile {
   max-width: 160px;
@@ -80,7 +83,7 @@ header {
 }
 .intro {
   height: auto;
-  font-size: 21px;
+  font-size: 1.3rem;
   font-weight: normal;
   line-height: 28px;
   margin-top: 0;
@@ -125,7 +128,7 @@ header {
   padding-left: 0;
 }
 .skill ul li {
-  font-size: 21px;
+  font-size: 1.3rem;
   float: left;
 }
 .skill ul li.slash {
@@ -140,6 +143,7 @@ header {
   text-align: center;
 }
 .portfolio-selected .portfolio-link a {
+  font-size: 1.1rem;
   margin: 0 auto;
 }
 .pic,
@@ -175,7 +179,7 @@ header {
 }
 .job ul li,
 .experience ul li {
-  font-size: 20px;
+  font-size: 1.1rem;
   color: #000;
   margin-bottom: 10px;
   margin-left: 16px;
@@ -280,6 +284,14 @@ header {
   }
 }
 @media only screen and (max-width: 991px) {
+  .section-1,
+  .section-2 {
+    padding: 0 60px;
+  }
+  .pic img {
+    min-height: 250px;
+    max-height: 250px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -295,8 +307,71 @@ header {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 576px) {
+  .profile {
+    max-width: 120px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  .section-1,
+  .section-2 {
+    padding: 0 40px;
+  }
+  .intro {
+    font-size: 1.1rem;
+  }
+  .portfolio-selected {
+    margin-bottom: 0;
+    padding: 0 60px;
+  }
+  .portfolio-selected > div {
+    margin-bottom: 20px;
+  }
+  .portfolio-selected .portfolio-link a {
+    font-size: 1rem;
+  }
+  .skill ul li {
+    font-size: 1.05rem;
+  }
+  .pic img {
+    min-height: 280px;
+    max-height: 280px;
+  }
+  .job ul li,
+  .experience ul li {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+  .contact ul li {
+    font-size: 18px;
+  }
+  .contact i {
+    font-size: 21px;
+  }
+  .job ul,
+  .experience ul {
+    margin-left: 13px;
+  }
+  .copyright {
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
+  .section-1,
+  .section-2 {
+    padding: 0 20px;
+  }
+  .pic img {
+    min-height: 200px;
+    max-height: 200px;
+  }
+  .job ul li,
+  .experience ul li {
+    font-size: 0.9rem;
+  }
 }

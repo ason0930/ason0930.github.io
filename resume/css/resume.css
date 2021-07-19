@@ -275,7 +275,23 @@ header {
 }
 
 /* rwd */
+@media only screen and (max-width: 1920px) {
+  .pic img {
+    min-height: 240px;
+    max-height: 240px;
+  }
+}
 @media only screen and (max-width: 1440px) {
+  .pic img {
+    min-height: 200px;
+    max-height: 200px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  /* .pic img {
+    min-height: 240px;
+    max-height: 240px;
+  } */
 }
 @media only screen and (max-width: 1199px) {
   .my-btn:hover {
@@ -289,8 +305,8 @@ header {
     padding: 0 60px;
   }
   .pic img {
-    min-height: 250px;
-    max-height: 250px;
+    min-height: 240px;
+    max-height: 240px;
   }
 }
 

@@ -1,0 +1,393 @@
+/* 20210719 Ason */
+/* common */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #d3d3d3;
+  background: url(../images/bg_2.jpg);
+  background-size: cover;
+  font-family: 微軟正黑體;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+body.change {
+  overflow: hidden;
+}
+h1 {
+  font-family: "Calligraffitti";
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 36px;
+}
+h3 {
+  font-size: 1.4rem;
+}
+a:link,
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+button:focus {
+  outline: none;
+}
+.margin-top-fix-1 {
+  margin-top: 10px !important;
+}
+.margin-top-fix-2 {
+  margin-top: 32px;
+}
+.margin-bottom-fix-1 {
+  margin-bottom: 30px;
+}
+.margin-fix {
+  margin: 0 !important;
+}
+.margin-right-fix {
+  margin-right: 0 !important;
+}
+.btn-fix {
+  text-align: center;
+  margin-right: 0 !important;
+}
+header {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.jumbotron {
+  background-color: transparent;
+  padding: 30px 0 0;
+}
+.profile {
+  max-width: 160px;
+  margin: 0 auto 10px;
+}
+.profile img {
+  width: 100%;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.section-1 {
+  margin-bottom: 30px;
+}
+.intro {
+  height: auto;
+  font-size: 1.3rem;
+  font-weight: normal;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.best-works {
+  font-size: 1rem;
+}
+.best-works i {
+  font-size: 0.8rem;
+  margin-right: 3px;
+}
+.contact {
+  padding: 0 10px 0;
+}
+.contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+.contact ul li {
+  font-size: 21px;
+  color: #000;
+  float: left;
+}
+.contact ul li {
+  margin-right: 20px;
+}
+.contact ul li i.fa-phone-square {
+  margin-right: 5px;
+}
+.contact i {
+  font-size: 30px;
+}
+.contact ul li:last-child i {
+  margin-right: 0;
+}
+.skill {
+  padding: 0 6px 0;
+}
+.skill ul {
+  list-style: none;
+  padding-left: 0;
+}
+.skill ul li {
+  font-size: 1.3rem;
+  float: left;
+}
+.skill ul li.slash {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.portfolio-selected {
+  margin-bottom: 50px;
+}
+.portfolio-selected .portfolio-link {
+  display: block !important;
+  text-align: center;
+}
+.portfolio-selected .portfolio-link a {
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+.pic,
+.pic:active {
+  width: auto;
+  background-color: #fff;
+  border: 1px #bbb solid;
+  box-shadow: 0 0 10px #999;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* padding: 10px; */
+}
+.pic:hover {
+  /* border: 5px #bdbdbd solid; */
+  box-shadow: 0 0 5px #999;
+}
+.pic:hover {
+  /* border: 1px #ccc solid; */
+  box-shadow: none;
+}
+.pic img {
+  width: 100%;
+  max-width: 100%;
+  min-height: 300px;
+  max-height: 300px;
+}
+.job ul,
+.experience ul {
+  list-style: square;
+  color: #000;
+  padding: 0;
+  margin-left: 16px;
+}
+.job ul li,
+.experience ul li {
+  font-size: 1.1rem;
+  color: #000;
+  margin-bottom: 10px;
+  margin-left: 16px;
+}
+.copyright {
+  background-color: #222;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 50px;
+  padding: 12px 0;
+}
+.copyright span {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.my-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 6px 14px 6px;
+  border-radius: 50%;
+  font-size: 32px;
+  opacity: 0.7;
+}
+.my-btn:hover {
+  background-color: #555;
+  opacity: 0.8;
+}
+.my-btn .fas.fa-arrow-up {
+  font-size: 30px;
+}
+
+/* Modal images */
+/* The Modal (background) */
+.ason-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 102; /* Sit on top */
+  /*padding-top: 50px;*/ /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.98); /* Black w/ opacity */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Modal Content */
+.ason-modal-content {
+  width: 80%;
+  /*max-width: 100%;*/
+  background-color: none;
+  border: 0 solid #888;
+  text-align: center;
+  margin: auto;
+  /*padding: 20px;*/
+}
+.ason-modal-content img {
+  width: auto;
+  max-width: 100%;
+  max-height: 90vh;
+}
+
+/* The Close Button */
+.close {
+  display: inline-block !important;
+  color: #ffffff !important;
+  font-size: 50px !important;
+  font-weight: 900 !important;
+  opacity: 0.5;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+/* rwd */
+@media only screen and (max-width: 1920px) {
+  .pic img {
+    min-height: 240px;
+    max-height: 240px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .pic img {
+    min-height: 200px;
+    max-height: 200px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  /* .pic img {
+    min-height: 240px;
+    max-height: 240px;
+  } */
+}
+@media only screen and (max-width: 1199px) {
+  .my-btn:hover {
+    background-color: gray;
+    opacity: 0.5;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .section-1,
+  .section-2 {
+    padding: 0 60px;
+  }
+  .pic img {
+    min-height: 240px;
+    max-height: 240px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .my-btn {
+    bottom: 100px;
+    right: 10px;
+  }
+  .copyright {
+    font-size: 11px;
+  }
+  .copyright i {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .profile {
+    max-width: 120px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  .section-1,
+  .section-2 {
+    padding: 0 40px;
+  }
+  .intro {
+    font-size: 1.1rem;
+  }
+  .portfolio-selected {
+    margin-bottom: 0;
+    padding: 0 60px;
+  }
+  .portfolio-selected > div {
+    margin-bottom: 20px;
+  }
+  .portfolio-selected .portfolio-link a {
+    font-size: 1rem;
+  }
+  .skill ul li {
+    font-size: 1.05rem;
+  }
+  .pic img {
+    min-height: 280px;
+    max-height: 280px;
+  }
+  .job ul li,
+  .experience ul li {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+  .contact ul li {
+    font-size: 18px;
+  }
+  .contact i {
+    font-size: 21px;
+  }
+  .job ul,
+  .experience ul {
+    margin-left: 13px;
+  }
+  .copyright {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .section-1,
+  .section-2 {
+    padding: 0 20px;
+  }
+  .pic img {
+    min-height: 200px;
+    max-height: 200px;
+  }
+  .job ul li,
+  .experience ul li {
+    font-size: 0.9rem;
+  }
+}

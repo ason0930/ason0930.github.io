@@ -28,10 +28,11 @@
   </header>
   <!-- 頁首 結束 -->
 
-  <!-- 主內容開始 -->
+  <!-- 主內容 開始 -->
   <div class="container-fluid bg-god">
     <div class="row">
 
+      <!-- 自我介紹 開始 -->
       <div class="profile">
         <img src="images/profile_ason_2.jpg" />
       </div>
@@ -40,6 +41,9 @@
           <h3 class="intro">嗨！我是森貿，擅長視覺設計及網頁切版，專注於前端網頁設計之領域。<a href="http://180.176.208.66/ason/best.html" target="new"
               class="best-works" title="艾森作品集"><i class="fa fa-link"></i>線上作品集</a></h3>
         </div>
+        <!-- 自我介紹 開始 -->
+
+        <!-- 連絡方式 開始 -->
         <div class="section-1 col-lg-8 offset-lg-2 col-xl-8 off-xl-2 col-xxl-5 offset-xxl-4 clearfix">
           <h2>連絡方式</h2>
           <div class="contact">
@@ -56,6 +60,9 @@
             </ul>
           </div>
         </div>
+        <!-- 連絡方式 結束 -->
+
+        <!-- 技能專長 開始 -->
         <div class="section-1 col-lg-8 offset-lg-2 col-xl-8 off-xl-2 col-xxl-5 offset-xxl-4 clearfix">
           <h2>技能專長</h2>
           <div class="skill">
@@ -66,10 +73,14 @@
             </ul>
           </div>
         </div>
+        <!-- 技能專長 結束 -->
+
+        <!-- 作品精選 開始 -->
         <div class="section-2 col-lg-8 offset-lg-2 col-xl-8 off-xl-2 col-xxl-5 offset-xxl-4 clearfix">
           <h2>作品精選</h2>
         </div>
-        <div class="row portfolio-selected col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-8 off-xl-2 col-xxl-5 offset-xxl-4">
+        <div
+          class="row portfolio-selected col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-8 off-xl-2 col-xxl-5 offset-xxl-4">
           <div class="col-md-4 col-lg-4 col-xxl-3">
             <div class="pic text-center">
               <a href="https://lionghongkiong.github.io/" target="_blank">
@@ -98,6 +109,9 @@
                 onClick="myBtnFunction(0)">七級風線上購物(商標)</a></div>
           </div>
         </div>
+        <!-- 作品精選 結束 -->
+
+        <!-- 職務描述 開始 -->
         <div class="section-1 col-lg-8 offset-lg-2 col-xl-8 off-xl-2 col-xxl-5 offset-xxl-4 clearfix">
           <h2>職務描述</h2>
           <div class="job">
@@ -115,12 +129,17 @@
             </ul>
           </div>
         </div>
+        <!-- 職務描述 結束 -->
+
       </div>
     </div>
   </div>
+  <!-- 主內容 結束 -->
+
   <!-- 頁尾 開始 -->
-  <footer class="text-center copyright container-fluid">ASON HUANG<span class="icon-copyright">&copy;</span>2021
+  <footer class="text-center copyright container-fluid">Ason Huang<span class="icon-copyright">&copy;</span>2021
   </footer>
+  <!-- 頁尾 結束 -->
 
   <!-- The Modal start -->
   <div class="ason-modal" onClick="myCloseFunction()">
@@ -133,8 +152,9 @@
   </div>
   <!-- The Modal end -->
 
+  <!-- 回首頁按鈕 開始 -->
   <button onclick="topFunction()" id="myBtn" class="my-btn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
-  <!-- 頁尾 結束 -->
+  <!-- 回首頁按鈕  結束 -->
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -152,54 +172,19 @@
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/aa6afd6828.js"></script>
 
-  <!-- 回頁頂 開始 -->
+  <!-- 回頁頂JS -->
   <script src="js/gotop.js"></script>
-  <!-- 回頁頂 結束 -->
 
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  <!-- 關閉modal按鈕 -->
   <script>
-    function mainBtn(x) {
-      x.classList.toggle("change");
-      document.body.classList.toggle("change");
-    }
-    function mainMenuSwich(x) {
-      x.classList.toggle("change");
-    }
-
-    // INITIALIZE AOS
-    AOS.init();
-
-    // Get the button that open the modal
-    function myBtnFunction(numA) {
-      document.body.classList.toggle("change");
-      var x, i;
-      x = document.querySelectorAll(".modal-content");
-      for (i = 0; i < x.length; i++) {
-        return x[numA].style.display = "flex";
-      }
-    }
-
-    // Get the button that close the modal
-    function myCloseFunction() {
-      document.body.classList.toggle("change");
-      var x, i;
-      x = document.querySelectorAll(".modal-content");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-    }
-
     function closeBtn() {
       var x = document.querySelectorAll(".modal-content");
       x[0].style.display = "none";
     }
   </script>
 
-  <!-- modal images start -->
+  <!-- modal images -->
   <script src="js/modal_images.js"></script>
-  <!-- modal images end -->
 
 </body>
 

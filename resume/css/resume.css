@@ -61,6 +61,11 @@ button:focus {
   text-align: center;
   margin-right: 0 !important;
 }
+.section-1 {
+  margin-bottom: 30px;
+}
+
+/* 頁首 */
 header {
   margin-top: 0;
   margin-bottom: 0;
@@ -69,6 +74,8 @@ header {
   background-color: transparent;
   padding: 30px 0 0;
 }
+
+/* 自我介紹 */
 .profile {
   max-width: 160px;
   margin: 0 auto 10px;
@@ -77,9 +84,6 @@ header {
   width: 100%;
   border-radius: 50%;
   vertical-align: middle;
-}
-.section-1 {
-  margin-bottom: 30px;
 }
 .intro {
   height: auto;
@@ -96,6 +100,8 @@ header {
   font-size: 0.8rem;
   margin-right: 3px;
 }
+
+/* 連絡方式 */
 .contact {
   padding: 0 10px 0;
 }
@@ -120,6 +126,8 @@ header {
 .contact ul li:last-child i {
   margin-right: 0;
 }
+
+/* 技能專長 */
 .skill {
   padding: 0 6px 0;
 }
@@ -135,6 +143,8 @@ header {
   padding-left: 4px;
   padding-right: 4px;
 }
+
+/* 作品精選 */
 .portfolio-selected {
   margin-bottom: 50px;
 }
@@ -154,14 +164,11 @@ header {
   box-shadow: 0 0 10px #999;
   margin-top: 10px;
   margin-bottom: 10px;
-  /* padding: 10px; */
 }
 .pic:hover {
-  /* border: 5px #bdbdbd solid; */
   box-shadow: 0 0 5px #999;
 }
 .pic:hover {
-  /* border: 1px #ccc solid; */
   box-shadow: none;
 }
 .pic img {
@@ -170,6 +177,8 @@ header {
   min-height: 300px;
   max-height: 300px;
 }
+
+/* 職務描述 */
 .job ul,
 .experience ul {
   list-style: square;
@@ -184,6 +193,8 @@ header {
   margin-bottom: 10px;
   margin-left: 16px;
 }
+
+/* 頁尾 */
 .copyright {
   background-color: #222;
   font-size: 14px;
@@ -195,6 +206,8 @@ header {
   font-size: 10px;
   padding: 0 5px;
 }
+
+/* 回首頁按鈕 */
 .my-btn {
   display: none;
   position: fixed;
@@ -222,17 +235,16 @@ header {
 /* Modal images */
 /* The Modal (background) */
 .ason-modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 102; /* Sit on top */
-  /*padding-top: 50px;*/ /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 102;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.98); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.98);
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -242,12 +254,10 @@ header {
 /* Modal Content */
 .ason-modal-content {
   width: 80%;
-  /*max-width: 100%;*/
   background-color: none;
   border: 0 solid #888;
   text-align: center;
   margin: auto;
-  /*padding: 20px;*/
 }
 .ason-modal-content img {
   width: auto;
@@ -286,12 +296,6 @@ header {
     min-height: 200px;
     max-height: 200px;
   }
-}
-@media only screen and (max-width: 1439px) {
-  /* .pic img {
-    min-height: 240px;
-    max-height: 240px;
-  } */
 }
 @media only screen and (max-width: 1199px) {
   .my-btn:hover {

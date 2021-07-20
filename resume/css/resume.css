@@ -32,7 +32,6 @@ h3 {
   font-size: 1.4rem;
 }
 h4 {
-  font-family: "Calligraffitti";
   margin-bottom: 30px;
 }
 a:link,
@@ -352,6 +351,12 @@ year::after {
   }
   .profile {
     margin: 0 auto 0;
+  }
+  .best-works {
+    font-size: 0.8rem;
+  }
+  .best-works i {
+    font-size: 0.6rem;
   }
   .portfolio-selected .portfolio-link a {
     font-size: 0.9rem;

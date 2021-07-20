@@ -166,7 +166,7 @@ header {
   border: 1px #bbb solid;
   box-shadow: 0 0 10px #999;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .pic:hover {
   box-shadow: 0 0 5px #999;
@@ -182,19 +182,41 @@ header {
 }
 
 /* 職務描述 */
-.job ul,
-.experience ul {
+.job ul {
   list-style: square;
   color: #000;
   padding: 0;
   margin-left: 16px;
 }
-.job ul li,
-.experience ul li {
+.job ul li {
   font-size: 1.1rem;
   color: #000;
   margin-bottom: 10px;
   margin-left: 16px;
+}
+
+/* 工作經歷 */
+.experience ul {
+  color: #000;
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+.experience li {
+  width: 30%;
+  font-size: 1.1rem;
+  color: #000;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  float: left;
+}
+year {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+year::after {
+  content: " / ";
 }
 
 /* 頁尾 */
@@ -299,6 +321,9 @@ header {
     min-height: 200px;
     max-height: 200px;
   }
+  .experience li {
+    width: 45%;
+  } 
 }
 @media only screen and (max-width: 1199px) {
   .my-btn:hover {
@@ -326,6 +351,20 @@ header {
   }
   .profile {
     margin: 0 auto 0;
+  }
+  .portfolio-selected .portfolio-link a {
+    font-size: 0.9rem;
+  }
+  /* .pic {
+    max-width: 120px;
+  }
+  .pic img {
+    min-height: 200px;
+    max-height: 200px;
+  } */
+  .experience li {
+    width: 100%;
+    margin-left: 5px;
   }
   .copyright {
     font-size: 11px;
@@ -373,17 +412,18 @@ header {
     min-height: 280px;
     max-height: 280px;
   }
-  .job ul li,
-  .experience ul li {
+  .job ul {
+    margin-left: 13px;
+  }
+  .job ul li {
     font-size: 1rem;
     margin-left: 10px;
   }
+  .experience li {
+    font-size: 1rem;
+  }
   .contact ul li {
     font-size: 18px;
-  }
-  .job ul,
-  .experience ul {
-    margin-left: 13px;
   }
   .copyright {
     margin-top: 30px;

@@ -151,6 +151,9 @@ header {
 .portfolio-selected {
   margin-bottom: 50px;
 }
+.portfolio-selected > div {
+  max-width: 240px;
+}
 .portfolio-selected .portfolio-link {
   display: block !important;
   text-align: center;
@@ -203,15 +206,15 @@ header {
   padding: 0;
 }
 .experience li {
-  width: 30%;
-  font-size: 1.1rem;
+  width: 27%;
+  font-size: 1rem;
   color: #000;
   margin-left: 5px;
   margin-bottom: 10px;
   float: left;
 }
 year {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -311,24 +314,45 @@ year::after {
 
 /* rwd */
 @media only screen and (max-width: 1920px) {
+  .contact ul li {
+    font-size: 19px;
+  }
+  .contact i {
+    font-size: 28px;
+  }
+  .portfolio-selected > div {
+    max-width: 200px;
+  }
   .pic img {
     min-height: 240px;
     max-height: 240px;
   }
+  .experience li {
+    width: 40%;
+  }
 }
 @media only screen and (max-width: 1440px) {
+  .portfolio-selected > div {
+    max-width: 200px;
+  }
   .pic img {
     min-height: 200px;
     max-height: 200px;
   }
   .experience li {
-    width: 45%;
-  } 
+    width: 38%;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .my-btn:hover {
     background-color: gray;
     opacity: 0.5;
+  }
+  .portfolio-selected > div {
+    max-width: 200px;
+  }
+  .experience li {
+    width: 36%;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -336,12 +360,27 @@ year::after {
   .section-2 {
     padding: 0 60px;
   }
+  .contact ul li {
+    font-size: 17px;
+  }
+  .contact i {
+    font-size: 28px;
+  }
+  .portfolio-selected > div {
+    max-width: 240px;
+  }
   .pic img {
     min-height: 240px;
     max-height: 240px;
   }
-  .contact i {
+  .contact ul li {
     font-size: 21px;
+  }
+  .contact i {
+    font-size: 28px;
+  }
+  .experience li {
+    width: 44%;
   }
 }
 
@@ -352,6 +391,12 @@ year::after {
   .profile {
     margin: 0 auto 0;
   }
+  .contact ul li {
+    font-size: 21px;
+  }
+  .contact i {
+    font-size: 28px;
+  }
   .best-works {
     font-size: 0.8rem;
   }
@@ -361,15 +406,8 @@ year::after {
   .portfolio-selected .portfolio-link a {
     font-size: 0.9rem;
   }
-  /* .pic {
-    max-width: 120px;
-  }
-  .pic img {
-    min-height: 200px;
-    max-height: 200px;
-  } */
   .experience li {
-    width: 100%;
+    width: 48%;
     margin-left: 5px;
   }
   .copyright {
@@ -406,6 +444,7 @@ year::after {
     padding: 0 60px;
   }
   .portfolio-selected > div {
+    max-width: 240px;
     margin-bottom: 20px;
   }
   .portfolio-selected .portfolio-link a {
@@ -426,6 +465,7 @@ year::after {
     margin-left: 10px;
   }
   .experience li {
+    width: 100%;
     font-size: 1rem;
   }
   .contact ul li {

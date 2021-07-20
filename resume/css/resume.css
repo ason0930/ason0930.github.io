@@ -31,6 +31,9 @@ h2 {
 h3 {
   font-size: 1.4rem;
 }
+h4 {
+  margin-bottom: 30px;
+}
 a:link,
 a:visited {
   color: #000;
@@ -78,7 +81,7 @@ header {
 /* 自我介紹 */
 .profile {
   max-width: 160px;
-  margin: 0 auto 10px;
+  margin: 0 auto 5px;
 }
 .profile img {
   width: 100%;

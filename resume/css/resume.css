@@ -1,4 +1,4 @@
-/* 20210719 Ason */
+/* 20210721 Ason */
 /* common */
 * {
   box-sizing: border-box;
@@ -156,7 +156,7 @@ header {
   text-align: center;
 }
 .portfolio-selected .portfolio-link a {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 0 auto;
 }
 .pic,

@@ -321,6 +321,12 @@ header {
 }
 
 @media only screen and (max-width: 767px) {
+  h4 {
+    margin-bottom: 15px;
+  }
+  .profile {
+    margin: 0 auto 0;
+  }
   .copyright {
     font-size: 11px;
   }

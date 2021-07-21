@@ -315,7 +315,7 @@ year::after {
 /* rwd */
 @media only screen and (max-width: 1920px) {
   .intro {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
   .contact ul li {
     font-size: 19px;

@@ -107,7 +107,7 @@ header {
 
 /* 連絡方式 */
 .contact {
-  padding: 0 10px 0;
+  padding: 0 6px 0;
 }
 .contact ul {
   list-style: none;
@@ -491,6 +491,7 @@ year::after {
   .experience li {
     width: 100%;
     font-size: 1rem;
+    margin-bottom: 5px;
   }
   .contact ul li {
     font-size: 18px;

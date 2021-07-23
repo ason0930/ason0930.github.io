@@ -31,6 +31,7 @@ h2 {
 }
 h3 {
   font-size: 1.4rem;
+  letter-spacing: 1px;
 }
 h4 {
   margin-bottom: 30px;
@@ -155,6 +156,7 @@ header {
 }
 .skill ul li {
   font-size: 1.3rem;
+  letter-spacing: 1px;
   float: left;
 }
 .skill ul li.slash {

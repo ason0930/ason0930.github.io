@@ -26,6 +26,7 @@ h2 {
   font-size: 24px;
   font-weight: bold;
   color: #000;
+  letter-spacing: 2px;
   margin-top: 36px;
 }
 h3 {
@@ -126,11 +127,14 @@ header {
 .contact ul li i.fa-phone-square {
   /* margin-right: 5px; */
 }
-.contact span {
-  font-size: 18px;
-  margin-right: 5px;
-  font-weight: bold;
-  color: #212529;
+.contact-name {
+  letter-spacing: 1px;
+}
+.slash {
+  font-size: 19px;
+  vertical-align: text-top;
+  margin-right: 2px;
+  margin-left: 2px;
 }
 .contact i {
   font-size: 20px;
@@ -407,6 +411,9 @@ year::after {
   }
   .contact ul li {
     font-size: 21px;
+  }
+  .slash {
+    font-size: 16px;
   }
   .contact i {
     font-size: 20px;

@@ -122,7 +122,7 @@ header {
 }
 .contact ul li:first-child {
   font-weight: bold;
-  color: #222;
+  color: #000;
 }
 .contact ul li i.fa-phone-square {
   /* margin-right: 5px; */

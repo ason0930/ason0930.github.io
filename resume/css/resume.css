@@ -93,7 +93,6 @@ header {
 .intro {
   height: auto;
   font-size: 1.3rem;
-  font-weight: normal;
   line-height: 28px;
   margin-top: 0;
   margin-bottom: 0;
@@ -102,7 +101,7 @@ header {
   font-size: 1rem;
 }
 .best-works i {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-right: 3px;
 }
 
@@ -333,6 +332,7 @@ year::after {
 @media only screen and (max-width: 1920px) {
   .intro {
     font-size: 1.3rem;
+    line-height: 28px;
   }
   .contact ul li {
     font-size: 19px;
@@ -461,6 +461,7 @@ year::after {
   }
   .intro {
     font-size: 1.1rem;
+    line-height: 24px;
   }
   .portfolio-selected {
     margin-bottom: 0;
@@ -474,7 +475,7 @@ year::after {
     font-size: 1rem;
   }
   .skill ul li {
-    font-size: 1.05rem;
+    font-size: 1.03rem;
   }
   .pic img {
     min-height: 280px;

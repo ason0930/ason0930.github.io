@@ -1,4 +1,4 @@
-/* 20210721 Ason */
+/* 20210723 Ason */
 /* common */
 * {
   box-sizing: border-box;
@@ -113,18 +113,28 @@ header {
   padding-left: 0;
 }
 .contact ul li {
-  font-size: 21px;
+  width: 100%;
+  font-size: 20px;
   color: #000;
   float: left;
+  /* margin-right: 20px; */
 }
-.contact ul li {
-  margin-right: 20px;
+.contact ul li:first-child {
+  font-weight: bold;
+  color: #222;
 }
 .contact ul li i.fa-phone-square {
+  /* margin-right: 5px; */
+}
+.contact span {
+  font-size: 18px;
   margin-right: 5px;
+  font-weight: bold;
+  color: #212529;
 }
 .contact i {
   font-size: 30px;
+  margin-right: 2px;
 }
 .contact ul li:last-child i {
   margin-right: 0;

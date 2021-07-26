@@ -1,4 +1,4 @@
-/* 20210723 Ason */
+/* 20210726 Ason */
 /* common */
 * {
   box-sizing: border-box;
@@ -154,7 +154,7 @@ header {
   padding-left: 0;
 }
 .skill ul li {
-  font-size: 1.3rem;
+  font-size: 1.22rem;
   letter-spacing: 1px;
   float: left;
 }
@@ -165,7 +165,7 @@ header {
 
 /* 作品精選 */
 .portfolio-selected {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .portfolio-selected > div {
   max-width: 240px;
@@ -177,6 +177,16 @@ header {
 .portfolio-selected .portfolio-link a {
   font-size: 1rem;
   margin: 0 auto;
+}
+.portfolio-more {
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+.portfolio-more a {
+  text-decoration: underline;
+}
+.portfolio-more a:hover {
+  text-decoration: none;
 }
 .pic,
 .pic:active {

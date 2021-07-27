@@ -66,9 +66,13 @@ button:focus {
   text-align: center;
   margin-right: 0 !important;
 }
+.section-1, .section-2 {
+  padding-left: 50px;
+}
 .section-1 {
   margin-bottom: 30px;
 }
+
 
 /* 頁首 */
 header {
@@ -92,7 +96,7 @@ header {
 }
 .intro {
   height: auto;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 28px;
   margin-top: 0;
   margin-bottom: 0;
@@ -154,7 +158,7 @@ header {
   padding-left: 0;
 }
 .skill ul li {
-  font-size: 1.22rem;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   float: left;
 }
@@ -176,11 +180,13 @@ header {
 }
 .portfolio-selected .portfolio-link a {
   font-size: 1rem;
+  line-height: 20px;
   margin: 0 auto;
 }
 .portfolio-more {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 50px;
+  margin-left: 10px;
 }
 .portfolio-more a {
   text-decoration: underline;
@@ -232,7 +238,7 @@ header {
   padding: 0;
 }
 .experience li {
-  width: 27%;
+  width: 32%;
   font-size: 1rem;
   color: #000;
   margin-left: 5px;
@@ -341,7 +347,7 @@ year::after {
 /* rwd */
 @media only screen and (max-width: 1920px) {
   .intro {
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
     line-height: 28px;
   }
   .contact ul li {
@@ -362,15 +368,24 @@ year::after {
   }
 }
 @media only screen and (max-width: 1440px) {
+  .section-1, .section-2 {
+    padding-left: 0;
+  }
+  .slash {
+    display: none !important;
+  }
   .portfolio-selected > div {
     max-width: 200px;
+  }
+  .portfolio-selected .portfolio-link a {
+    font-size: 0.9rem;
   }
   .pic img {
     min-height: 200px;
     max-height: 200px;
   }
   .experience li {
-    width: 38%;
+    width: 48%;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -453,6 +468,9 @@ year::after {
     bottom: 100px;
     right: 10px;
   }
+  year {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -482,7 +500,10 @@ year::after {
     margin-bottom: 20px;
   }
   .portfolio-selected .portfolio-link a {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  .portfolio-more {
+    font-size: 0.9rem;
   }
   .skill ul li {
     font-size: 1.03rem;
@@ -500,7 +521,7 @@ year::after {
   }
   .experience li {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.05rem;
     margin-bottom: 5px;
   }
   .contact ul li {
@@ -517,11 +538,11 @@ year::after {
     padding: 0 20px;
   }
   .pic img {
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 240px;
+    max-height: 240px;
   }
   .job ul li,
   .experience ul li {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }

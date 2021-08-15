@@ -1033,6 +1033,9 @@ body {
 	.container {
 		width:auto !important;
 	}
+	.navFloatXs {
+		display:none !important;
+	}
 	#navFloatXL .title {
 		font-size:24px;
 	}

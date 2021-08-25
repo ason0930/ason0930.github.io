@@ -134,7 +134,7 @@ header {
 .contact-name {
   letter-spacing: 1px;
 }
-.contact-slash, .skill-slash  {
+.contact-slash  {
   font-size: 19px;
   vertical-align: text-top;
   margin-right: 2px;
@@ -164,8 +164,12 @@ header {
   float: left;
 }
 .skill ul li.skill-slash {
-  padding-left: 4px;
-  padding-right: 4px;
+  font-size: 19px;
+  vertical-align: text-top;
+  margin-right: 2px;
+  margin-left: 2px;
+  /* padding-left: 4px;
+  padding-right: 4px; */
 }
 
 /* 作品精選 */
@@ -376,7 +380,7 @@ year::after {
     padding-left: 0;
   }
   .skill-slash{
-    display: none !important;
+    /* display: none !important; */
   }
   .portfolio-selected > div {
     max-width: 200px;
@@ -398,7 +402,7 @@ year::after {
     opacity: 0.5;
   }
   .skill-slash {
-    display: inline-block !important;
+    /* display: inline-block !important; */
   }
   .portfolio-selected > div {
     max-width: 200px;
@@ -432,7 +436,7 @@ year::after {
     font-size: 20px;
   }
   .skill-slash {
-    display: none !important;
+    /* display: none !important; */
   }
   .experience li {
     width: 44%;
@@ -542,6 +546,11 @@ year::after {
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .skill-slash {
+    display: none !important;
+  }
+}
 @media only screen and (max-width: 320px) {
   .section-1,
   .section-2 {
